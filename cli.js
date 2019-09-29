@@ -2,14 +2,16 @@ const dbird = require('./index.js')
 const _ = require('lodash')
 const colors = require('colors')
 
-function sortNeeds (need) {
+function sortNeeds (needs) {
   let str = ''
-  if (need.audio) {
-    str = str + '🎤'
-  } else if (need.photo) {
+  if (needs.photo) {
     str = str + '📷'
-  } else if (need.sighting) {
-    str = str + '🔭'
+  }
+  if (needs.audio) {
+    str = str + '🎤'
+  }
+  if (needs.sighting) {
+    str = '🔭📷🎤'
   }
   return str
 }

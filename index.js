@@ -1,31 +1,28 @@
-const axios = require("axios")
 const cheerio = require('cheerio')
-const htmlparser2 = require('htmlparser2');
+const htmlparser2 = require('htmlparser2')
 const fs = require('fs')
-const _ = require('lodash')
 
-const urls = ["photos", "audio", "species"]
+const urls = ['photos', 'audio', 'species']
 
 const fetchData = async (url) => {
   const result = await fs.readFileSync(`html_files/${url}.html`)
-  const dom = htmlparser2.parseDOM(result);
-  return cheerio.load(dom);
-};
+  const dom = htmlparser2.parseDOM(result)
+  return cheerio.load(dom)
+}
 
 const list = {}
 
 async function scrape (url) {
-  const $ = await fetchData(url);
+  const $ = await fetchData(url)
   const arr = []
 
   // Populate the total list
-  const speciesCode = $('h5.SpecimenHeader-joined > a')
+  $('h5.SpecimenHeader-joined > a')
     .each((n, elem) => {
-      arr.push({'speciesCode': $(elem).data('species-code')})
-      list[$(elem).data('species-code')] = {}
+      arr.push({ 'speciesCode': $(elem).data('species-code') })
     })
 
-  const targetResults = $('h5.SpecimenHeader-joined > a')
+  $('h5.SpecimenHeader-joined > a')
     .text()
     .toString()
     .replace(/\t/g, '')
@@ -34,13 +31,17 @@ async function scrape (url) {
     .map((n, i) => {
       n = n.split(' ')
       Object.assign(arr[i], {
-        'common': n.slice(0,-2).join(' '),
+        'common': n.slice(0, -2).join(' '),
         'scientific': n.slice(-2).join(' '),
-        'needs': {}
+        'needs': {
+          'audio': false,
+          'photo': false,
+          'sighting': false
+        }
       })
     })
 
-  const rarity = $('.StatsIcon-stat-count')
+  $('.StatsIcon-stat-count')
     .text()
     .split('%')
     .filter(n => n !== '')
@@ -50,22 +51,25 @@ async function scrape (url) {
       })
     })
 
-  arr.map(n => {
-    list[n.speciesCode] = n
-  })
-
   const heading = $('#targets-category-select option[selected="selected"]').attr('value')
-  if (heading === 'A') {
-    arr.map(n => list[n.speciesCode].needs.audio = true)
-  } else if (heading === 'P') {
-    arr.map(n => list[n.speciesCode].needs.photo = true)
-  } else {
-    arr.map(n => list[n.speciesCode].needs.sighting = true)
-  }
+  arr.forEach(n => {
+    if (!(n.speciesCode in list)) {
+      list[n.speciesCode] = n
+    }
+    if (heading === 'A') {
+      list[n.speciesCode].needs.audio = true
+    } else if (heading === 'P') {
+      list[n.speciesCode].needs.photo = true
+    } else {
+      list[n.speciesCode].needs.audio = true
+      list[n.speciesCode].needs.sighting = true
+      list[n.speciesCode].needs.photo = true
+    }
+  })
 }
 
-async function callAllLists() {
-  for (url in urls) {
+async function callAllLists () {
+  for (let url in urls) {
     await scrape(urls[url])
   }
 

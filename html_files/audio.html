@@ -214,6 +214,8 @@
 	
 	
 	
+	
+	
 
 	
 
@@ -469,6 +471,8 @@
 	
 	
 	
+	
+	
 
 	
 
@@ -657,7 +661,7 @@
 														<div data-suggest=""
 															data-suggest-url="https://api.ebird.org/v2/ref/region/find?key=jfekjedvescr&q=%QUERY&amp;locale=en"
 															data-suggest-id="targets-region-input"
-															data-suggest-value="Vermont, US"
+															data-suggest-value="Lamoille County, Vermont, US"
 															data-suggest-placeholder="Enter a county, state, province, or country"
 															data-suggest-name="region"
 															data-suggest-minlength="2"
@@ -673,7 +677,7 @@
 									</fieldset>
 
 									
-									<input id="targets-region-input-hidden" name="r1" type="hidden" value="US-VT"/>
+									<input id="targets-region-input-hidden" name="r1" type="hidden" value="US-VT-015"/>
 
 								</div>
 
@@ -692,8 +696,8 @@
 											
 											
 											
-												
 											
+												
 											
 										
 									
@@ -723,10 +727,10 @@
 													</button>
 												
 											
-											<button class="Button Button--fauxRadio is-checked" data-checked name="monthRange" role="radio" type="button" value="9">
+											<button class="Button Button--fauxRadio "  name="monthRange" role="radio" type="button" value="9">
 												September
 											</button>
-											<button class="Button Button--fauxRadio "  name="monthRange" role="radio" type="button" value="custom">
+											<button class="Button Button--fauxRadio is-checked" data-checked name="monthRange" role="radio" type="button" value="custom">
 												Custom
 											</button>
 										</div>
@@ -746,7 +750,7 @@
 											<div class="GridFlex-cell u-md-size1of2">
 												<label for="#targets-end-month">Ending month</label>
 												<select id="targets-end-month" name="emo">
-													<option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9" selected="selected">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option>
+													<option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10" selected="selected">Oct</option><option value="11">Nov</option><option value="12">Dec</option>
 												</select>
 											</div>
 										</div>
@@ -772,7 +776,7 @@
 												<label class="is-visuallyHidden" for="#targets-comparison-region">List region</label>
 												
 												<select id="targets-comparison-region" name="r2">
-													<option value="US-VT" selected="selected">Vermont, US</option><option value="US">United States</option><option value="aba">ABA Area</option><option value="world">World</option>
+													<option value="US-VT-015" selected="selected">Lamoille County, Vermont, US</option><option value="US-VT">Vermont, US</option><option value="US">United States</option><option value="aba">ABA Area</option><option value="world">World</option>
 												</select>
 											</div>
 
@@ -786,7 +790,7 @@
 															<option value="life" selected >Life List</option>
 															<option value="year"  >Year List (2019)</option>
 															<option value="month"  >Month List (September, all years)</option>
-															<option value="day"  >Day List (23 September, all years)</option>
+															<option value="day"  >Day List (29 September, all years)</option>
 														
 													
 													
@@ -858,7 +862,7 @@
 				<div class="Page-section-inner Page-section-inner--lg">
 					<div class="GridFlex">
 						<div class="GridFlex-cell">
-							<p class="u-text-3 u-margin-none" style="text-align:center;">Based on 20,734 complete checklists</p>
+							<p class="u-text-3 u-margin-none" style="text-align:center;">Based on 1,726 complete checklists</p>
 						</div>
 					</div>
 				</div>
@@ -872,15 +876,15 @@
 							
 							<div class="SectionHeading u-stack-sm" style="flex-wrap:nowrap;">
 								<div class="SectionHeading-heading">
-									<strong class="Heading Heading--h1" style="display:inline; color:#4ca800;">75</strong>
+									<strong class="Heading Heading--h1" style="display:inline; color:#4ca800;">16</strong>
 
 									
 										
 											
 											
 											
-												species observed in <a href="subnational1/US-VT"><strong>Vermont, US</strong></a> in <strong>Sep</strong> that you need for your <strong>Vermont Life List</strong>
 											
+												species observed in <a href="subnational2/US-VT-015"><strong>Lamoille County, Vermont, US</strong></a> from <strong>Sep</strong> through <strong>Oct</strong> that you need for your <strong>Lamoille County Life List</strong>
 											
 										
 										
@@ -897,7 +901,7 @@
 								
 								
 									<div class="SectionHeading-link SectionHeading-link--right">
-										<a target="_blank" href="/targets?r1=US-VT&r2=US-VT&t2=life&bmo=9&emo=9&mediaType=A&print=true" class="Button Button--small Button--hollow u-margin-none">Print</a>
+										<a target="_blank" href="/targets?r1=US-VT-015&r2=US-VT-015&t2=life&bmo=9&emo=10&mediaType=A&print=true" class="Button Button--small Button--hollow u-margin-none">Print</a>
 									</div>
 								
 							</div>
@@ -914,12 +918,12 @@
 										<a href="#RadioGroup-sort" class="RadioGroup-toggler" aria-controls="RadioGroup-sort" aria-expanded="false"><span>Sort by</span><svg class="Icon Icon--triangleDown" role="presentation"><use xlink:href="#Icon--triangleDown"></use></svg></a>
 										<span id="RadioGroup-sort" class="RadioGroup-panel RadioGroup-panel--alignRight" data-panel aria-hidden="true" data-focus-on="a">
 											<div>
-												<a href="/targets?r1=US-VT&r2=US-VT&t2=life&bmo=9&emo=9&mediaType=A&sortBy=freq&o=desc" class="Button Button--transparent u-margin-none" style="font-weight:bold; color:#212121;" >
+												<a href="/targets?r1=US-VT-015&r2=US-VT-015&t2=life&bmo=9&emo=10&mediaType=A&sortBy=freq&o=desc" class="Button Button--transparent u-margin-none" style="font-weight:bold; color:#212121;" >
 													Frequency
 												</a>
 											</div>
 											<div>
-												<a href="/targets?r1=US-VT&r2=US-VT&t2=life&bmo=9&emo=9&mediaType=A&sortBy=taxon_order&o=asc" class="Button Button--transparent u-margin-none"  >
+												<a href="/targets?r1=US-VT-015&r2=US-VT-015&t2=life&bmo=9&emo=10&mediaType=A&sortBy=taxon_order&o=asc" class="Button Button--transparent u-margin-none"  >
 													Species
 												</a>
 											</div>
@@ -945,8 +949,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/grbher3/US-VT" data-species-code="grbher3">
-															Great Blue Heron <em class="sci">Ardea herodias</em>
+														<a href="/species/blujay/US-VT-015" data-species-code="blujay">
+															Blue Jay <em class="sci">Cyanocitta cristata</em>
 														</a>
 													
 													
@@ -956,21 +960,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="22.44140% frequency">
+									<div class="ResultsStats-stats" title="42.93163% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">22.44%</span>
+															<span class="StatsIcon-stat-count">42.93%</span>
 														
 													
 												</span>
 												<span class="StatsIcon-label">frequency</span>
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:22.4414%;">
+												<div class="ProgressBar-meter" style="width:42.93163%;">
 													
 													
 												</div>
@@ -982,7 +986,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/grbher3?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/blujay?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1005,8 +1009,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/wooduc/US-VT" data-species-code="wooduc">
-															Wood Duck <em class="sci">Aix sponsa</em>
+														<a href="/species/amecro/US-VT-015" data-species-code="amecro">
+															American Crow <em class="sci">Corvus brachyrhynchos</em>
 														</a>
 													
 													
@@ -1016,21 +1020,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="14.56545% frequency">
+									<div class="ResultsStats-stats" title="40.38239% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">14.57%</span>
+															<span class="StatsIcon-stat-count">40.38%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:14.56545%;">
+												<div class="ProgressBar-meter" style="width:40.38239%;">
 													
 													
 												</div>
@@ -1042,7 +1046,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/wooduc?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/amecro?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1065,8 +1069,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/turvul/US-VT" data-species-code="turvul">
-															Turkey Vulture <em class="sci">Cathartes aura</em>
+														<a href="/species/amerob/US-VT-015" data-species-code="amerob">
+															American Robin <em class="sci">Turdus migratorius</em>
 														</a>
 													
 													
@@ -1076,21 +1080,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="14.31948% frequency">
+									<div class="ResultsStats-stats" title="20.91541% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">14.32%</span>
+															<span class="StatsIcon-stat-count">20.92%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:14.31948%;">
+												<div class="ProgressBar-meter" style="width:20.91541%;">
 													
 													
 												</div>
@@ -1102,7 +1106,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/turvul?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/amerob?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1125,8 +1129,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/rthhum/US-VT" data-species-code="rthhum">
-															Ruby-throated Hummingbird <em class="sci">Archilochus colubris</em>
+														<a href="/species/belkin1/US-VT-015" data-species-code="belkin1">
+															Belted Kingfisher <em class="sci">Megaceryle alcyon</em>
 														</a>
 													
 													
@@ -1136,21 +1140,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="12.03338% frequency">
+									<div class="ResultsStats-stats" title="10.48667% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">12.03%</span>
+															<span class="StatsIcon-stat-count">10.49%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:12.03338%;">
+												<div class="ProgressBar-meter" style="width:10.48667%;">
 													
 													
 												</div>
@@ -1162,7 +1166,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/rthhum?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/belkin1?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1185,8 +1189,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/magwar/US-VT" data-species-code="magwar">
-															Magnolia Warbler <em class="sci">Setophaga magnolia</em>
+														<a href="/species/grbher3/US-VT-015" data-species-code="grbher3">
+															Great Blue Heron <em class="sci">Ardea herodias</em>
 														</a>
 													
 													
@@ -1196,21 +1200,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="10.82280% frequency">
+									<div class="ResultsStats-stats" title="10.19699% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">10.82%</span>
+															<span class="StatsIcon-stat-count">10.20%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:10.8228%;">
+												<div class="ProgressBar-meter" style="width:10.19699%;">
 													
 													
 												</div>
@@ -1222,7 +1226,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/magwar?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/grbher3?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1245,8 +1249,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/doccor/US-VT" data-species-code="doccor">
-															Double-crested Cormorant <em class="sci">Phalacrocorax auritus</em>
+														<a href="/species/grycat/US-VT-015" data-species-code="grycat">
+															Gray Catbird <em class="sci">Dumetella carolinensis</em>
 														</a>
 													
 													
@@ -1256,21 +1260,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="10.10900% frequency">
+									<div class="ResultsStats-stats" title="8.92236% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">10.11%</span>
+															<span class="StatsIcon-stat-count">8.92%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:10.109%;">
+												<div class="ProgressBar-meter" style="width:8.92236%;">
 													
 													
 												</div>
@@ -1282,7 +1286,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/doccor?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/grycat?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1305,8 +1309,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/baleag/US-VT" data-species-code="baleag">
-															Bald Eagle <em class="sci">Haliaeetus leucocephalus</em>
+														<a href="/species/comyel/US-VT-015" data-species-code="comyel">
+															Common Yellowthroat <em class="sci">Geothlypis trichas</em>
 														</a>
 													
 													
@@ -1316,21 +1320,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="7.81808% frequency">
+									<div class="ResultsStats-stats" title="8.80649% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">7.82%</span>
+															<span class="StatsIcon-stat-count">8.81%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:7.81808%;">
+												<div class="ProgressBar-meter" style="width:8.80649%;">
 													
 													
 												</div>
@@ -1342,7 +1346,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/baleag?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/comyel?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1365,8 +1369,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/greegr/US-VT" data-species-code="greegr">
-															Great Egret <em class="sci">Ardea alba</em>
+														<a href="/species/eursta/US-VT-015" data-species-code="eursta">
+															European Starling <em class="sci">Sturnus vulgaris</em>
 														</a>
 													
 													
@@ -1376,21 +1380,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="7.22485% frequency">
+									<div class="ResultsStats-stats" title="8.63268% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">7.22%</span>
+															<span class="StatsIcon-stat-count">8.63%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:7.22485%;">
+												<div class="ProgressBar-meter" style="width:8.63268%;">
 													
 													
 												</div>
@@ -1402,7 +1406,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/greegr?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/eursta?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1425,8 +1429,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/norhar2/US-VT" data-species-code="norhar2">
-															Northern Harrier <em class="sci">Circus hudsonius</em>
+														<a href="/species/dowwoo/US-VT-015" data-species-code="dowwoo">
+															Downy Woodpecker <em class="sci">Dryobates pubescens</em>
 														</a>
 													
 													
@@ -1436,21 +1440,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="6.27472% frequency">
+									<div class="ResultsStats-stats" title="8.51680% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">6.27%</span>
+															<span class="StatsIcon-stat-count">8.52%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:6.27472%;">
+												<div class="ProgressBar-meter" style="width:8.5168%;">
 													
 													
 												</div>
@@ -1462,7 +1466,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/norhar2?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/dowwoo?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1485,8 +1489,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/shshaw/US-VT" data-species-code="shshaw">
-															Sharp-shinned Hawk <em class="sci">Accipiter striatus</em>
+														<a href="/species/moudov/US-VT-015" data-species-code="moudov">
+															Mourning Dove <em class="sci">Zenaida macroura</em>
 														</a>
 													
 													
@@ -1496,21 +1500,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="6.06251% frequency">
+									<div class="ResultsStats-stats" title="7.70568% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">6.06%</span>
+															<span class="StatsIcon-stat-count">7.71%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:6.06251%;">
+												<div class="ProgressBar-meter" style="width:7.70568%;">
 													
 													
 												</div>
@@ -1522,7 +1526,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/shshaw?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/moudov?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1545,8 +1549,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/naswar/US-VT" data-species-code="naswar">
-															Nashville Warbler <em class="sci">Leiothlypis ruficapilla</em>
+														<a href="/species/cedwax/US-VT-015" data-species-code="cedwax">
+															Cedar Waxwing <em class="sci">Bombycilla cedrorum</em>
 														</a>
 													
 													
@@ -1556,21 +1560,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="5.68149% frequency">
+									<div class="ResultsStats-stats" title="6.66280% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">5.68%</span>
+															<span class="StatsIcon-stat-count">6.66%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:5.68149%;">
+												<div class="ProgressBar-meter" style="width:6.6628%;">
 													
 													
 												</div>
@@ -1582,7 +1586,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/naswar?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/cedwax?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1605,8 +1609,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/hergul/US-VT" data-species-code="hergul">
-															Herring Gull <em class="sci">Larus argentatus</em>
+														<a href="/species/savspa/US-VT-015" data-species-code="savspa">
+															Savannah Sparrow <em class="sci">Passerculus sandwichensis</em>
 														</a>
 													
 													
@@ -1616,21 +1620,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="5.51268% frequency">
+									<div class="ResultsStats-stats" title="5.56199% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">5.51%</span>
+															<span class="StatsIcon-stat-count">5.56%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:5.51268%;">
+												<div class="ProgressBar-meter" style="width:5.56199%;">
 													
 													
 												</div>
@@ -1642,7 +1646,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/hergul?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/savspa?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1665,8 +1669,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/comloo/US-VT" data-species-code="comloo">
-															Common Loon <em class="sci">Gavia immer</em>
+														<a href="/species/reevir1/US-VT-015" data-species-code="reevir1">
+															Red-eyed Vireo <em class="sci">Vireo olivaceus</em>
 														</a>
 													
 													
@@ -1676,21 +1680,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="5.42105% frequency">
+									<div class="ResultsStats-stats" title="5.27231% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">5.42%</span>
+															<span class="StatsIcon-stat-count">5.27%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:5.42105%;">
+												<div class="ProgressBar-meter" style="width:5.27231%;">
 													
 													
 												</div>
@@ -1702,7 +1706,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/comloo?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/reevir1?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1725,8 +1729,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/robgro/US-VT" data-species-code="robgro">
-															Rose-breasted Grosbeak <em class="sci">Pheucticus ludovicianus</em>
+														<a href="/species/rocpig/US-VT-015" data-species-code="rocpig">
+															Rock Pigeon <em class="sci">Columba livia</em>
 														</a>
 													
 													
@@ -1736,21 +1740,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="5.28118% frequency">
+									<div class="ResultsStats-stats" title="4.92468% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">5.28%</span>
+															<span class="StatsIcon-stat-count">4.92%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:5.28118%;">
+												<div class="ProgressBar-meter" style="width:4.92468%;">
 													
 													
 												</div>
@@ -1762,7 +1766,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/robgro?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/rocpig?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1785,8 +1789,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/greyel/US-VT" data-species-code="greyel">
-															Greater Yellowlegs <em class="sci">Tringa melanoleuca</em>
+														<a href="/species/turvul/US-VT-015" data-species-code="turvul">
+															Turkey Vulture <em class="sci">Cathartes aura</em>
 														</a>
 													
 													
@@ -1796,21 +1800,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="5.16061% frequency">
+									<div class="ResultsStats-stats" title="4.22943% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">5.16%</span>
+															<span class="StatsIcon-stat-count">4.23%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:5.16061%;">
+												<div class="ProgressBar-meter" style="width:4.22943%;">
 													
 													
 												</div>
@@ -1822,7 +1826,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/greyel?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/turvul?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1845,8 +1849,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/coohaw/US-VT" data-species-code="coohaw">
-															Cooper's Hawk <em class="sci">Accipiter cooperii</em>
+														<a href="/species/amekes/US-VT-015" data-species-code="amekes">
+															American Kestrel <em class="sci">Falco sparverius</em>
 														</a>
 													
 													
@@ -1856,21 +1860,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="4.68795% frequency">
+									<div class="ResultsStats-stats" title="2.72306% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">4.69%</span>
+															<span class="StatsIcon-stat-count">2.72%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:4.68795%;">
+												<div class="ProgressBar-meter" style="width:2.72306%;">
 													
 													
 												</div>
@@ -1882,3547 +1886,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/coohaw?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">17.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/tenwar/US-VT" data-species-code="tenwar">
-															Tennessee Warbler <em class="sci">Leiothlypis peregrina</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="4.50950% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">4.51%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:4.5095%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/tenwar?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">18.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/ambduc/US-VT" data-species-code="ambduc">
-															American Black Duck <em class="sci">Anas rubripes</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="4.46609% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">4.47%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:4.46609%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/ambduc?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">19.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/merlin/US-VT" data-species-code="merlin">
-															Merlin <em class="sci">Falco columbarius</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="4.41786% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">4.42%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:4.41786%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/merlin?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">20.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/commer/US-VT" data-species-code="commer">
-															Common Merganser <em class="sci">Mergus merganser</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="4.27800% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">4.28%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:4.278%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/commer?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">21.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/savspa/US-VT" data-species-code="savspa">
-															Savannah Sparrow <em class="sci">Passerculus sandwichensis</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="4.15260% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">4.15%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:4.1526%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/savspa?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">22.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/gbbgul/US-VT" data-species-code="gbbgul">
-															Great Black-backed Gull <em class="sci">Larus marinus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="4.07061% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">4.07%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:4.07061%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/gbbgul?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">23.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/gnwtea/US-VT" data-species-code="gnwtea">
-															Green-winged Teal <em class="sci">Anas crecca</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="3.97897% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">3.98%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:3.97897%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/gnwtea?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">24.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/brncre/US-VT" data-species-code="brncre">
-															Brown Creeper <em class="sci">Certhia americana</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="3.92592% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">3.93%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:3.92592%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/brncre?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">25.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/bkbwar/US-VT" data-species-code="bkbwar">
-															Blackburnian Warbler <em class="sci">Setophaga fusca</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="3.78123% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">3.78%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:3.78123%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/bkbwar?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">26.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/palwar/US-VT" data-species-code="palwar">
-															Palm Warbler <em class="sci">Setophaga palmarum</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="3.09636% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">3.10%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:3.09636%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/palwar?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">27.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/solsan/US-VT" data-species-code="solsan">
-															Solitary Sandpiper <em class="sci">Tringa solitaria</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="2.96614% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">2.97%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:2.96614%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/solsan?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">28.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/wlswar/US-VT" data-species-code="wlswar">
-															Wilson's Warbler <em class="sci">Cardellina pusilla</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="2.69605% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">2.70%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:2.69605%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/wlswar?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">29.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/babwar/US-VT" data-species-code="babwar">
-															Bay-breasted Warbler <em class="sci">Setophaga castanea</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="2.64300% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">2.64%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:2.643%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/babwar?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">30.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/buwtea/US-VT" data-species-code="buwtea">
-															Blue-winged Teal <em class="sci">Spatula discors</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="2.58995% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">2.59%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:2.58995%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/buwtea?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">31.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/hoomer/US-VT" data-species-code="hoomer">
-															Hooded Merganser <em class="sci">Lophodytes cucullatus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="2.51760% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">2.52%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:2.5176%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/hoomer?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">32.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/perfal/US-VT" data-species-code="perfal">
-															Peregrine Falcon <em class="sci">Falco peregrinus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="2.49831% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">2.50%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:2.49831%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/perfal?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">33.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/treswa/US-VT" data-species-code="treswa">
-															Tree Swallow <em class="sci">Tachycineta bicolor</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="2.27163% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">2.27%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:2.27163%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/treswa?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">34.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/eastow/US-VT" data-species-code="eastow">
-															Eastern Towhee <em class="sci">Pipilo erythrophthalmus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="1.88097% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">1.88%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:1.88097%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/eastow?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">35.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/barswa/US-VT" data-species-code="barswa">
-															Barn Swallow <em class="sci">Hirundo rustica</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="1.79415% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">1.79%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:1.79415%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/barswa?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">36.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/pibgre/US-VT" data-species-code="pibgre">
-															Pied-billed Grebe <em class="sci">Podilymbus podiceps</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="1.73146% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">1.73%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:1.73146%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/pibgre?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">37.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/marwre/US-VT" data-species-code="marwre">
-															Marsh Wren <em class="sci">Cistothorus palustris</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="1.63017% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">1.63%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:1.63017%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/marwre?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">38.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/camwar/US-VT" data-species-code="camwar">
-															Cape May Warbler <em class="sci">Setophaga tigrina</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="1.61088% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">1.61%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:1.61088%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/camwar?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">39.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/whcspa/US-VT" data-species-code="whcspa">
-															White-crowned Sparrow <em class="sci">Zonotrichia leucophrys</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="1.44690% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">1.45%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:1.4469%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/whcspa?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">40.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/caster1/US-VT" data-species-code="caster1">
-															Caspian Tern <em class="sci">Hydroprogne caspia</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="1.33597% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">1.34%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:1.33597%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/caster1?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">41.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/fiespa/US-VT" data-species-code="fiespa">
-															Field Sparrow <em class="sci">Spizella pusilla</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="1.22022% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">1.22%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:1.22022%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/fiespa?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">42.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/canwar/US-VT" data-species-code="canwar">
-															Canada Warbler <em class="sci">Cardellina canadensis</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="1.17681% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">1.18%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:1.17681%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/canwar?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">43.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/brnthr/US-VT" data-species-code="brnthr">
-															Brown Thrasher <em class="sci">Toxostoma rufum</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="1.06106% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-														
-															<span class="StatsIcon-stat-count">1.06%</span>
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:1.06106%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/brnthr?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">44.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/comnig/US-VT" data-species-code="comnig">
-															Common Nighthawk <em class="sci">Chordeiles minor</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.96942% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.9694%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.96942%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/comnig?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">45.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/grcfly/US-VT" data-species-code="grcfly">
-															Great Crested Flycatcher <em class="sci">Myiarchus crinitus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.85849% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.8585%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.85849%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/grcfly?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">46.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/amebit/US-VT" data-species-code="amebit">
-															American Bittern <em class="sci">Botaurus lentiginosus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.68004% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.6800%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.68004%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/amebit?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">47.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/norpin/US-VT" data-species-code="norpin">
-															Northern Pintail <em class="sci">Anas acuta</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.66075% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.6607%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.66075%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/norpin?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">48.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/norgos/US-VT" data-species-code="norgos">
-															Northern Goshawk <em class="sci">Accipiter gentilis</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.59323% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.5932%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.59323%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/norgos?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">49.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/rinduc/US-VT" data-species-code="rinduc">
-															Ring-necked Duck <em class="sci">Aythya collaris</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.54982% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.5498%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.54982%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/rinduc?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">50.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/balori/US-VT" data-species-code="balori">
-															Baltimore Oriole <em class="sci">Icterus galbula</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.54018% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.5402%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.54018%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/balori?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">51.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/gryjay/US-VT" data-species-code="gryjay">
-															Canada Jay <em class="sci">Perisoreus canadensis</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.47265% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.4726%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.47265%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/gryjay?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">52.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/evegro/US-VT" data-species-code="evegro">
-															Evening Grosbeak <em class="sci">Coccothraustes vespertinus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.45818% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.4582%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.45818%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/evegro?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">53.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/comgol/US-VT" data-species-code="comgol">
-															Common Goldeneye <em class="sci">Bucephala clangula</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.40031% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.4003%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.40031%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/comgol?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">54.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/bkbwoo/US-VT" data-species-code="bkbwoo">
-															Black-backed Woodpecker <em class="sci">Picoides arcticus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.40031% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.4003%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.40031%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/bkbwoo?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">55.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/yebfly/US-VT" data-species-code="yebfly">
-															Yellow-bellied Flycatcher <em class="sci">Empidonax flaviventris</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.40031% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.4003%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.40031%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/yebfly?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">56.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/mouwar/US-VT" data-species-code="mouwar">
-															Mourning Warbler <em class="sci">Geothlypis philadelphia</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.39549% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.3955%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.39549%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/mouwar?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">57.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/banswa/US-VT" data-species-code="banswa">
-															Bank Swallow <em class="sci">Riparia riparia</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.33279% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.3328%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.33279%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/banswa?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">58.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/norwat/US-VT" data-species-code="norwat">
-															Northern Waterthrush <em class="sci">Parkesia noveboracensis</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.33279% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.3328%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.33279%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/norwat?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">59.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/snogoo/US-VT" data-species-code="snogoo">
-															Snow Goose <em class="sci">Anser caerulescens</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.28938% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.2894%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.28938%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/snogoo?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">60.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/whwsco2/US-VT" data-species-code="whwsco2">
-															White-winged Scoter <em class="sci">Melanitta deglandi</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.25562% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.2556%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.25562%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/whwsco2?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">61.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/goleag/US-VT" data-species-code="goleag">
-															Golden Eagle <em class="sci">Aquila chrysaetos</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.25080% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.2508%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.2508%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/goleag?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">62.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/horlar/US-VT" data-species-code="horlar">
-															Horned Lark <em class="sci">Eremophila alpestris</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.19774% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.1977%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.19774%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/horlar?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">63.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/gresca/US-VT" data-species-code="gresca">
-															Greater Scaup <em class="sci">Aythya marila</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.16880% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.1688%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.1688%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/gresca?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">64.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/cliswa/US-VT" data-species-code="cliswa">
-															Cliff Swallow <em class="sci">Petrochelidon pyrrhonota</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.13987% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.1399%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.13987%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/cliswa?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">65.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/vesspa/US-VT" data-species-code="vesspa">
-															Vesper Sparrow <em class="sci">Pooecetes gramineus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.12057% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.1206%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.12057%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/vesspa?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">66.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/lessca/US-VT" data-species-code="lessca">
-															Lesser Scaup <em class="sci">Aythya affinis</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.11575% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.1157%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.11575%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/lessca?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">67.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/wilfly/US-VT" data-species-code="wilfly">
-															Willow Flycatcher <em class="sci">Empidonax traillii</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.11575% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.1157%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.11575%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/wilfly?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">68.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/horgre/US-VT" data-species-code="horgre">
-															Horned Grebe <em class="sci">Podiceps auritus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.08199% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.0820%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.08199%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/horgre?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">69.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/rebmer/US-VT" data-species-code="rebmer">
-															Red-breasted Merganser <em class="sci">Mergus serrator</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.07717% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.0772%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.07717%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/rebmer?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">70.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/foxspa/US-VT" data-species-code="foxspa">
-															Fox Sparrow <em class="sci">Passerella iliaca</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.05788% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.0579%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.05788%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/foxspa?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">71.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/nrwswa/US-VT" data-species-code="nrwswa">
-															Northern Rough-winged Swallow <em class="sci">Stelgidopteryx serripennis</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.04341% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.0434%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.04341%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/nrwswa?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">72.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/rolhaw/US-VT" data-species-code="rolhaw">
-															Rough-legged Hawk <em class="sci">Buteo lagopus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.02411% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.0241%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.02411%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/rolhaw?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">73.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/bargol/US-VT" data-species-code="bargol">
-															Barrow's Goldeneye <em class="sci">Bucephala islandica</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.00000% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.0000%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.0%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/bargol?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">74.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/sheowl/US-VT" data-species-code="sheowl">
-															Short-eared Owl <em class="sci">Asio flammeus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.00000% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.0000%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.0%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/sheowl?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">75.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/comred/US-VT" data-species-code="comred">
-															Common Redpoll <em class="sci">Acanthis flammea</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.00000% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.0000%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.0%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/comred?gp=true&yr=all&bmo=9&emo=9&amp;env.minX=-73.443&amp;env.minY=42.728&amp;env.maxX=-71.468&amp;env.maxY=45.016" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/amekes?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -5658,7 +2122,7 @@
 				
 				<div class="GridFlex-cell u-size1of1 u-text-2" style="color:#333; line-height:1;">
 					<span>
-						atc-p1
+						atc-p2
 
 					</span>
 				</div>
@@ -5681,12 +2145,12 @@
 
 		<script type="text/javascript">
 			var regionSelected = true,
-				customRangeSelected = 'false',
-				rtype2 = 'subnational1',
-				r2='US-VT',
+				customRangeSelected = 'true',
+				rtype2 = 'subnational2',
+				r2='US-VT-015',
 				t2='life',
 				bmo='9',
-				emo='9',
+				emo='10',
 				busyImgSrc = "/content/eBirdCommon/images/busy.gif",
 				blankImgSrc = "/content/eBirdCommon/images/sp.gif",
 				baseUrl = '/',
@@ -5698,8 +2162,8 @@
 
 		<!-- page-specific public js -->
 		<script>
-			var regionForSpeciesPage = 'US-VT';
-			var listName = 'Vermont, US - Target Species for Vermont - Life List';
+			var regionForSpeciesPage = 'US-VT-015';
+			var listName = 'Lamoille County, Vermont, US - Target Species for Lamoille County - Life List';
 			
 			ebird.configureLinks(regionForSpeciesPage, listName);
 

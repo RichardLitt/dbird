@@ -61,7 +61,7 @@ function createPeriodArray (data) {
       Species: removeSpuh(_.uniqBy(data[period], 'Scientific Name'))
     })
   }
-  return _.sortBy(periodArray, 'SpeciesTotal').reverse()[0]
+  return _.sortBy(periodArray, 'SpeciesTotal').reverse()
 }
 
 async function biggestTime (timespan) {
@@ -79,9 +79,9 @@ async function biggestTime (timespan) {
     }
   })
 
-  const biggest = createPeriodArray(dataByDate)
+  const biggest = createPeriodArray(dataByDate)[0]
   console.log(`Your biggest ${timespan} was ${biggest.Date} with ${biggest.SpeciesTotal} species.`)
-  console.log(`With these species: ${_.map(biggest.Species, 'Scientific Name').join(', ')}.`)
+  // console.log(`With these species: ${_.map(biggest.Species, 'Scientific Name').join(', ')}.`)
 }
 
 async function firstTimes (timespan) {
@@ -104,7 +104,7 @@ async function firstTimes (timespan) {
     }
   })
 
-  const biggest = createPeriodArray(dataByDate)
+  const biggest = createPeriodArray(dataByDate)[0]
   console.log(`Your newest ${timespan} was ${biggest.Date} with ${biggest.SpeciesTotal} new species.`)
   // console.log(`With these species: ${_.map(biggest.Species, 'Scientific Name').join(', ')}.`)
 }

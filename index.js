@@ -127,14 +127,14 @@ async function firstTimeList () {
   // Sort by the amount of unique entries per day
   data.forEach((e) => {
     const period = moment(e.Date, momentFormat(e.Date)).format(dateFormat)
-    const species = e['Scientific Name'].split(' ').slice(0, 2).join(' ') // Gets rid of subspecies
-    if (!speciesIndex[species]) {
+    const specie = e['Scientific Name']
+    if (!speciesIndex[specie]) {
       if (!dataByDate[period]) {
         dataByDate[period] = [e]
       } else {
         dataByDate[period].push(e)
       }
-      speciesIndex[species] = e.Date
+      speciesIndex[specie] = e.Date
     }
   })
 
@@ -146,12 +146,6 @@ async function firstTimeList () {
       i++
     })
   })
-  // TODO Print in a nice way
-  // TODO Figure out how to get all years from eBird. Why does it only print this year?
-  // console.log(biggest)
-
-  // console.log(`Your newest ${timespan} was ${biggest.Date} with ${biggest.SpeciesTotal} new species.`)
-  // console.log(`With these species: ${_.map(biggest.Species, 'Scientific Name').join(', ')}.`)
 }
 
 async function printResults () {

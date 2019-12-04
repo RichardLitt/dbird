@@ -42,6 +42,16 @@ function parseDateformat (timespan) {
   return dateFormat
 }
 
+function momentFormat (dateStr) {
+  if (dateStr.includes('-')) {
+    return 'YYYY-MM-DD'
+  } else if (dateStr.includes('/')) {
+    return 'MM/DD/YYYY'
+  } else {
+    throw new Error('Invalid Date String')
+  }
+}
+
 function createPeriodArray (data) {
   const periodArray = []
   for (const period in data) {
@@ -61,7 +71,7 @@ async function biggestTime (timespan) {
 
   // Sort by the amount of unique entries per day
   data.forEach((e) => {
-    const period = moment(e.Date, 'YYYY-MM-DD').format(dateFormat)
+    const period = moment(e.Date, momentFormat(e.Date)).format(dateFormat)
     if (!dataByDate[period]) {
       dataByDate[period] = [e]
     } else {
@@ -82,7 +92,7 @@ async function firstTimes (timespan) {
 
   // Sort by the amount of unique entries per day
   data.forEach((e) => {
-    const period = moment(e.Date, 'YYYY-MM-DD').format(dateFormat)
+    const period = moment(e.Date, momentFormat(e.Date)).format(dateFormat)
     if (!speciesIndex[e['Scientific Name']]) {
       if (!dataByDate[period]) {
         dataByDate[period] = [e]

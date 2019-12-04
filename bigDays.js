@@ -22,7 +22,7 @@ function removeSpuh (arr) {
 }
 
 async function getData () {
-  let data = await fs.readFile('MyEBirdData.csv', 'utf8')
+  let data = await fs.readFile(process.argv[2], 'utf8')
   data = Papa.parse(data, { header: true })
 
   return removeSpuh(data.data)

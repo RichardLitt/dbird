@@ -71,9 +71,9 @@ function createPeriodArray (data) {
   return _.sortBy(periodArray, 'SpeciesTotal').reverse()
 }
 
-async function biggestTime (timespan) {
+async function biggestTime (timespan, opts) {
   const dateFormat = parseDateformat(timespan)
-  const data = await getData()
+  const data = await getData(opts)
   const dataByDate = {}
 
   // Sort by the amount of unique entries per day
@@ -137,12 +137,12 @@ async function firstTimes (timespan, opts) {
 }
 
 function orderByDate (arr) {
-  return _.orderBy(arr, (e) => { moment(e.Date, momentFormat(e.Date)) }).reverse()
+  return _.orderBy(arr, (e) => moment(e.Date, momentFormat(e.Date)).format())
 }
 
 async function firstTimeList (opts) {
   const dateFormat = parseDateformat('day')
-  const data = locationFilter(orderByDate(await getData(opts)), opts) // Sort by the date, instead
+  const data = orderByDate(dateFilter(locationFilter(await getData(opts), opts), opts)) // Sort by the date, instead
   const dataByDate = {}
   const speciesIndex = {}
 
@@ -164,18 +164,18 @@ async function firstTimeList (opts) {
   // TODO Doesn't work for MyEBirdData for some reason
   _.sortBy(createPeriodArray(dataByDate), 'Date').forEach((e) => {
     e.Species.forEach((specie) => {
-      console.log(`${i} | ${specie['Common Name']} - ${specie['Scientific Name']} | ${(specie.County) ? specie.County + ', ' : ''}${specie.State}, ${specie.Country} | ${e.Date}`)
+      console.log(`${i} | ${specie['Common Name']} - ${specie['Scientific Name']} | ${(specie.County) ? specie.County + ', ' : ''}${specie['State/Province']} | ${e.Date}`)
       i++
     })
   })
 }
 
 module.exports = async function (opts) {
-  // await biggestTime('year')
-  // await biggestTime('month')
-  // await biggestTime('day')
-  // await firstTimes('year')
-  // await firstTimes('month')
-  // await firstTimes('day')
-  await firstTimeList(opts)
+  await biggestTime('year', opts)
+  await biggestTime('month', opts)
+  await biggestTime('day', opts)
+  await firstTimes('year', opts)
+  await firstTimes('month', opts)
+  await firstTimes('day', opts)
+  // await firstTimeList(opts)
 }

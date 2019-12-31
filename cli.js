@@ -13,6 +13,7 @@ const cli = meow(`
     --country   Search by country
     --state     Search by state
     --county    Search by county
+    --year      Limit results to a given year
 
   Examples
     $ node cli.js
@@ -29,6 +30,9 @@ const cli = meow(`
       type: 'string'
     },
     state: {
+      type: 'string'
+    },
+    year: {
       type: 'string'
     }
   }

@@ -99,9 +99,19 @@ function locationFilter (list, opts) {
   })
 }
 
-async function firstTimes (timespan) {
+function dateFilter (list, opts) {
+  // TODO Make month and day work
+  if (!opts.year) {
+    return list
+  }
+  return list.filter(x => {
+    return x.Date.split('-')[0] === opts.year
+  })
+}
+
+async function firstTimes (timespan, opts) {
   const dateFormat = parseDateformat(timespan)
-  const data = orderByDate(await getData()) // Sort by the date, instead
+  const data = orderByDate(await getData(opts)) // Sort by the date, instead
   const dataByDate = {}
   const speciesIndex = {}
 

@@ -14,20 +14,20 @@ function removeSpuh (arr) {
       // !arr[i]['Scientific Name'].match(/.* .* .*/g) &&
       // !arr[i]['Scientific Name'].includes('/')
     ) {
-      // console.log(arr[i]['Scientific Name'])
       // Remove subspecies only entries
       const specie = arr[i]
       specie['Scientific Name'] = specie['Scientific Name'].split(' ').slice(0, 2).join(' ')
       newArr.push(arr[i])
     } else {
+      // Use this to find excluded entries
       // console.log(arr[i]['Scientific Name'])
     }
   }
   return _.uniq(newArr)
 }
 
-async function getData () {
-  let data = await fs.readFile(process.argv[2], 'utf8')
+async function getData (opts) {
+  let data = await fs.readFile(opts.input, 'utf8')
   data = Papa.parse(data, { header: true })
 
   return removeSpuh(data.data)
@@ -89,6 +89,16 @@ async function biggestTime (timespan) {
   // console.log(`With these species: ${_.map(biggest.Species, 'Scientific Name').join(', ')}.`)
 }
 
+function locationFilter (list, opts) {
+  // TODO Make State and Country and County work
+  if (!opts.state) {
+    return list
+  }
+  return list.filter(x => {
+    return x.State === opts.state
+  })
+}
+
 async function firstTimes (timespan) {
   const dateFormat = parseDateformat(timespan)
   const data = orderByDate(await getData()) // Sort by the date, instead
@@ -118,9 +128,9 @@ function orderByDate (arr) {
   return _.orderBy(arr, (e) => { moment(e.Date, momentFormat(e.Date)) }).reverse()
 }
 
-async function firstTimeList () {
+async function firstTimeList (opts) {
   const dateFormat = parseDateformat('day')
-  const data = orderByDate(await getData()) // Sort by the date, instead
+  const data = locationFilter(orderByDate(await getData(opts)), opts) // Sort by the date, instead
   const dataByDate = {}
   const speciesIndex = {}
 
@@ -148,14 +158,12 @@ async function firstTimeList () {
   })
 }
 
-async function printResults () {
+module.exports = async function (opts) {
   // await biggestTime('year')
   // await biggestTime('month')
   // await biggestTime('day')
   // await firstTimes('year')
   // await firstTimes('month')
   // await firstTimes('day')
-  await firstTimeList()
+  await firstTimeList(opts)
 }
-
-printResults()

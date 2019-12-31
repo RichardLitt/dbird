@@ -14,6 +14,7 @@ const cli = meow(`
     --state     Search by state
     --county    Search by county
     --year      Limit results to a given year
+    --quad      Find quad birds
 
   Examples
     $ node cli.js
@@ -34,6 +35,9 @@ const cli = meow(`
     },
     year: {
       type: 'string'
+    },
+    quad: {
+      type: 'boolean'
     }
   }
 })

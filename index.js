@@ -9,6 +9,8 @@ function removeSpuh (arr) {
     // TODO Mixed results comparing MyEBirdData and Audio and Video data
     if (arr[i]['Scientific Name'] &&
       !arr[i]['Scientific Name'].includes('sp.') &&
+      !arr[i]['Scientific Name'].includes(' x ') && // Get rid of hybrids
+      !arr[i]['Scientific Name'].includes('Domestic type') && // Get rid of Domestic types
       !arr[i]['Scientific Name'].split(' ').slice(0, 2).join(' ').includes('/') // No Genus-level splits
       // !arr[i]['Scientific Name'].includes('[') &&
       // !arr[i]['Scientific Name'].match(/.* .* .*/g) &&

@@ -71,26 +71,6 @@ function createPeriodArray (data) {
   return _.sortBy(periodArray, 'SpeciesTotal').reverse()
 }
 
-async function biggestTime (timespan, opts) {
-  const dateFormat = parseDateformat(timespan)
-  const data = await getData(opts.input)
-  const dataByDate = {}
-
-  // Sort by the amount of unique entries per day
-  data.forEach((e) => {
-    const period = moment(e.Date, momentFormat(e.Date)).format(dateFormat)
-    if (!dataByDate[period]) {
-      dataByDate[period] = [e]
-    } else {
-      dataByDate[period].push(e)
-    }
-  })
-
-  const biggest = createPeriodArray(dataByDate)[0]
-  console.log(`Your biggest ${timespan} was ${biggest.Date} with ${biggest.SpeciesTotal} species.`)
-  // console.log(`With these species: ${_.map(biggest.Species, 'Scientific Name').join(', ')}.`)
-}
-
 function locationFilter (list, opts) {
   // TODO Make State and Country and County work
   if (!opts.state) {
@@ -109,6 +89,28 @@ function dateFilter (list, opts) {
   return list.filter(x => {
     return moment(x.Date, momentFormat(x.Date)).format('YYYY') === opts.year
   })
+}
+
+function orderByDate (arr) {
+  return _.orderBy(arr, (e) => moment(e.Date, momentFormat(e.Date)).format())
+}
+
+async function biggestTime (timespan, opts) {
+  const dateFormat = parseDateformat(timespan)
+  const data = await getData(opts.input)
+  const dataByDate = {}
+
+  // Sort by the amount of unique entries per day
+  data.forEach((e) => {
+    const period = moment(e.Date, momentFormat(e.Date)).format(dateFormat)
+    if (!dataByDate[period]) {
+      dataByDate[period] = [e]
+    } else {
+      dataByDate[period].push(e)
+    }
+  })
+
+  return createPeriodArray(dataByDate)[0]
 }
 
 async function firstTimes (timespan, opts) {
@@ -131,13 +133,7 @@ async function firstTimes (timespan, opts) {
     }
   })
 
-  const biggest = createPeriodArray(dataByDate)[0]
-  console.log(`Your newest ${timespan} was ${biggest.Date} with ${biggest.SpeciesTotal} new species.`)
-  // console.log(`With these species: ${_.map(biggest.Species, 'Scientific Name').join(', ')}.`)
-}
-
-function orderByDate (arr) {
-  return _.orderBy(arr, (e) => moment(e.Date, momentFormat(e.Date)).format())
+  return createPeriodArray(dataByDate)[0]
 }
 
 async function firstTimeList (opts) {
@@ -206,11 +202,14 @@ async function quadBirds (opts) {
     if (e.Format === 'Audio' && !speciesIndex[specie].audio) {
       speciesIndex[specie].audio = moment(e.Date, momentFormat(e.Date)).format('YYYY-MM-DD')
     }
-    if (!speciesIndex[specie].completed && speciesIndex[specie].audio && speciesIndex[specie].photo && speciesIndex[specie].seen) {
+    if (!speciesIndex[specie].completed &&
+      speciesIndex[specie].audio &&
+      speciesIndex[specie].photo &&
+      speciesIndex[specie].seen) {
       if (moment(speciesIndex[specie].audio, momentFormat(speciesIndex[specie].audio)).isBefore(speciesIndex[specie].photo, momentFormat(speciesIndex[specie].audio))) {
-        speciesIndex[specie].completed = speciesIndex[specie].audio
-      } else {
         speciesIndex[specie].completed = speciesIndex[specie].photo
+      } else {
+        speciesIndex[specie].completed = speciesIndex[specie].audio
       }
       completionDates.push({ Date: speciesIndex[specie].completed, species: speciesIndex[specie].species })
     }
@@ -218,19 +217,17 @@ async function quadBirds (opts) {
 
   completionDates = orderByDate(completionDates)
 
-  for (const species in orderByDate(completionDates)) {
-    console.log(`${completionDates[species].Date}: ${completionDates[species].species['Common Name']}.`)
+  if (opts.list) {
+    for (const species in completionDates) {
+      console.log(`${completionDates[species].Date}: ${completionDates[species].species['Common Name']}.`)
+    }
   }
   console.log(`You saw, photographed, and recorded audio for a total of ${completionDates.length} species in ${opts.year}.`)
 }
 
-module.exports = async function (opts) {
-  // await biggestTime('year', opts)
-  // await biggestTime('month', opts)
-  // await biggestTime('day', opts)
-  // await firstTimes('year', opts)
-  // await firstTimes('month', opts)
-  // await firstTimes('day', opts)
-  // await firstTimeList(opts)
-  await quadBirds(opts)
+module.exports = {
+  firstTimes,
+  biggestTime,
+  firstTimeList,
+  quadBirds
 }

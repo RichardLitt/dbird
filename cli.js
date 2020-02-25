@@ -128,7 +128,7 @@ async function run () {
       console.log(`With these species: ${_.map(biggest.Species, 'Scientific Name').join(', ')}.`)
     }
   } else {
-    console.log(`Are you sure that ${cli.input[0]} is the argument you wanted?`)
+    console.log(cli.showHelp())
   }
 }
 

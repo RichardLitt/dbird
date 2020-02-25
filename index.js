@@ -225,6 +225,17 @@ async function quadBirds (opts) {
   console.log(`You saw, photographed, and recorded audio for a total of ${completionDates.length} species in ${opts.year}.`)
 }
 
+async function today (opts) {
+  // I want to know:
+  // - Was today a big day?
+  // - Did I get new world birds today?
+  // - Did I get new country birds today?
+  // - Did I get new state birds today?
+  // - Did I get new county birds today?
+  // - Did I get new photo birds today?
+  // - Did I get new audio birds today?
+}
+
 module.exports = {
   firstTimes,
   biggestTime,

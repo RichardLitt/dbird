@@ -1,0 +1,1006 @@
+[
+  {
+    "town": "Addison",
+    "population": 1357
+  },
+  {
+    "town": "Albany",
+    "population": 932
+  },
+  {
+    "town": "Alburgh",
+    "population": 2004
+  },
+  {
+    "town": "Andover",
+    "population": 471
+  },
+  {
+    "town": "Arlington",
+    "population": 2297
+  },
+  {
+    "town": "Athens",
+    "population": 438
+  },
+  {
+    "town": "Averill",
+    "population": 24
+  },
+  {
+    "town": "Avery's Gore",
+    "population": 0
+  },
+  {
+    "town": "Bakersfield",
+    "population": 1342
+  },
+  {
+    "town": "Baltimore",
+    "population": 247
+  },
+  {
+    "town": "Barnard",
+    "population": 939
+  },
+  {
+    "town": "Barnet",
+    "population": 1696
+  },
+  {
+    "town": "Barre",
+    "population": 16900
+  },
+  {
+    "town": "Barton",
+    "population": 2753
+  },
+  {
+    "town": "Belvidere",
+    "population": 354
+  },
+  {
+    "town": "Bennington",
+    "population": 15555
+  },
+  {
+    "town": "Benson",
+    "population": 1049
+  },
+  {
+    "town": "Berkshire",
+    "population": 1710
+  },
+  {
+    "town": "Berlin",
+    "population": 2871
+  },
+  {
+    "town": "Bethel",
+    "population": 2020
+  },
+  {
+    "town": "Bloomfield",
+    "population": 219
+  },
+  {
+    "town": "Bolton",
+    "population": 1188
+  },
+  {
+    "town": "Bradford",
+    "population": 2782
+  },
+  {
+    "town": "Braintree",
+    "population": 1236
+  },
+  {
+    "town": "Brandon",
+    "population": 3919
+  },
+  {
+    "town": "Brattleboro",
+    "population": 11848
+  },
+  {
+    "town": "Bridgewater",
+    "population": 933
+  },
+  {
+    "town": "Bridport",
+    "population": 1215
+  },
+  {
+    "town": "Brighton",
+    "population": 1204
+  },
+  {
+    "town": "Bristol",
+    "population": 3875
+  },
+  {
+    "town": "Brookfield",
+    "population": 1295
+  },
+  {
+    "town": "Brookline",
+    "population": 526
+  },
+  {
+    "town": "Brownington",
+    "population": 979
+  },
+  {
+    "town": "Brunswick",
+    "population": 113
+  },
+  {
+    "town": "Buel's Gore",
+    "population": 30
+  },
+  {
+    "town": "Burke",
+    "population": 1744
+  },
+  {
+    "town": "Burlington",
+    "population": 42282
+  },
+  {
+    "town": "Cabot",
+    "population": 1452
+  },
+  {
+    "town": "Calais",
+    "population": 1601
+  },
+  {
+    "town": "Cambridge",
+    "population": 3726
+  },
+  {
+    "town": "Canaan",
+    "population": 954
+  },
+  {
+    "town": "Castleton",
+    "population": 4665
+  },
+  {
+    "town": "Cavendish",
+    "population": 1363
+  },
+  {
+    "town": "Charleston",
+    "population": 1014
+  },
+  {
+    "town": "Charlotte",
+    "population": 3812
+  },
+  {
+    "town": "Chelsea",
+    "population": 1241
+  },
+  {
+    "town": "Chester",
+    "population": 3116
+  },
+  {
+    "town": "Chittenden",
+    "population": 1241
+  },
+  {
+    "town": "Clarendon",
+    "population": 2543
+  },
+  {
+    "town": "Colchester",
+    "population": 17245
+  },
+  {
+    "town": "Concord",
+    "population": 1221
+  },
+  {
+    "town": "Corinth",
+    "population": 1370
+  },
+  {
+    "town": "Cornwall",
+    "population": 1174
+  },
+  {
+    "town": "Coventry",
+    "population": 1077
+  },
+  {
+    "town": "Craftsbury",
+    "population": 1195
+  },
+  {
+    "town": "Danby",
+    "population": 1300
+  },
+  {
+    "town": "Danville",
+    "population": 2197
+  },
+  {
+    "town": "Derby",
+    "population": 4562
+  },
+  {
+    "town": "Dorset",
+    "population": 2008
+  },
+  {
+    "town": "Dover",
+    "population": 1113
+  },
+  {
+    "town": "Dummerston",
+    "population": 1840
+  },
+  {
+    "town": "Duxbury",
+    "population": 1336
+  },
+  {
+    "town": "East Haven",
+    "population": 287
+  },
+  {
+    "town": "East Montpelier",
+    "population": 2602
+  },
+  {
+    "town": "Eden",
+    "population": 1345
+  },
+  {
+    "town": "Elmore",
+    "population": 871
+  },
+  {
+    "town": "Enosburg",
+    "population": 2770
+  },
+  {
+    "town": "Essex",
+    "population": 20057
+  },
+  {
+    "town": "Fair Haven",
+    "population": 2693
+  },
+  {
+    "town": "Fairfax",
+    "population": 4398
+  },
+  {
+    "town": "Fairfield",
+    "population": 1920
+  },
+  {
+    "town": "Fairlee",
+    "population": 980
+  },
+  {
+    "town": "Fayston",
+    "population": 1358
+  },
+  {
+    "town": "Ferdinand",
+    "population": 32
+  },
+  {
+    "town": "Ferrisburgh",
+    "population": 2757
+  },
+  {
+    "town": "Fletcher",
+    "population": 1295
+  },
+  {
+    "town": "Franklin",
+    "population": 1417
+  },
+  {
+    "town": "Georgia",
+    "population": 4602
+  },
+  {
+    "town": "Glastenbury",
+    "population": 8
+  },
+  {
+    "town": "Glover",
+    "population": 1113
+  },
+  {
+    "town": "Goshen",
+    "population": 163
+  },
+  {
+    "town": "Grafton",
+    "population": 674
+  },
+  {
+    "town": "Granby",
+    "population": 87
+  },
+  {
+    "town": "Grand Isle",
+    "population": 2069
+  },
+  {
+    "town": "Granville",
+    "population": 297
+  },
+  {
+    "town": "Greensboro",
+    "population": 754
+  },
+  {
+    "town": "Groton",
+    "population": 1020
+  },
+  {
+    "town": "Guildhall",
+    "population": 260
+  },
+  {
+    "town": "Guilford",
+    "population": 2104
+  },
+  {
+    "town": "Halifax",
+    "population": 725
+  },
+  {
+    "town": "Hancock",
+    "population": 322
+  },
+  {
+    "town": "Hardwick",
+    "population": 2968
+  },
+  {
+    "town": "Hartford",
+    "population": 9838
+  },
+  {
+    "town": "Hartland",
+    "population": 3385
+  },
+  {
+    "town": "Highgate",
+    "population": 3568
+  },
+  {
+    "town": "Hinesburg",
+    "population": 4457
+  },
+  {
+    "town": "Holland",
+    "population": 624
+  },
+  {
+    "town": "Hubbardton",
+    "population": 698
+  },
+  {
+    "town": "Huntington",
+    "population": 1969
+  },
+  {
+    "town": "Hyde Park",
+    "population": 3037
+  },
+  {
+    "town": "Ira",
+    "population": 429
+  },
+  {
+    "town": "Irasburg",
+    "population": 1153
+  },
+  {
+    "town": "Isle La Motte",
+    "population": 473
+  },
+  {
+    "town": "Jamaica",
+    "population": 1027
+  },
+  {
+    "town": "Jay",
+    "population": 539
+  },
+  {
+    "town": "Jericho",
+    "population": 5028
+  },
+  {
+    "town": "Johnson",
+    "population": 3495
+  },
+  {
+    "town": "Killington",
+    "population": 802
+  },
+  {
+    "town": "Kirby",
+    "population": 490
+  },
+  {
+    "town": "Landgrove",
+    "population": 159
+  },
+  {
+    "town": "Leicester",
+    "population": 1109
+  },
+  {
+    "town": "Lemington",
+    "population": 102
+  },
+  {
+    "town": "Lewis",
+    "population": 0
+  },
+  {
+    "town": "Lincoln",
+    "population": 1266
+  },
+  {
+    "town": "Londonderry",
+    "population": 1762
+  },
+  {
+    "town": "Lowell",
+    "population": 871
+  },
+  {
+    "town": "Ludlow",
+    "population": 1945
+  },
+  {
+    "town": "Lunenburg",
+    "population": 1287
+  },
+  {
+    "town": "Lyndon",
+    "population": 5969
+  },
+  {
+    "town": "Maidstone",
+    "population": 206
+  },
+  {
+    "town": "Manchester",
+    "population": 4339
+  },
+  {
+    "town": "Marlboro",
+    "population": 1069
+  },
+  {
+    "town": "Marshfield",
+    "population": 1567
+  },
+  {
+    "town": "Mendon",
+    "population": 1051
+  },
+  {
+    "town": "Middlebury",
+    "population": 8477
+  },
+  {
+    "town": "Middlesex",
+    "population": 1756
+  },
+  {
+    "town": "Middletown Springs",
+    "population": 741
+  },
+  {
+    "town": "Milton",
+    "population": 10526
+  },
+  {
+    "town": "Monkton",
+    "population": 2015
+  },
+  {
+    "town": "Montgomery",
+    "population": 1197
+  },
+  {
+    "town": "Montpelier",
+    "population": 7787
+  },
+  {
+    "town": "Moretown",
+    "population": 1666
+  },
+  {
+    "town": "Morgan",
+    "population": 746
+  },
+  {
+    "town": "Morristown",
+    "population": 5335
+  },
+  {
+    "town": "Mount Holly",
+    "population": 1229
+  },
+  {
+    "town": "Mount Tabor",
+    "population": 254
+  },
+  {
+    "town": "New Haven",
+    "population": 1747
+  },
+  {
+    "town": "Newark",
+    "population": 581
+  },
+  {
+    "town": "Newbury",
+    "population": 2212
+  },
+  {
+    "town": "Newfane",
+    "population": 1697
+  },
+  {
+    "town": "Newport",
+    "population": 6281
+  },
+  {
+    "town": "North Hero",
+    "population": 803
+  },
+  {
+    "town": "Northfield",
+    "population": 6185
+  },
+  {
+    "town": "Norton",
+    "population": 165
+  },
+  {
+    "town": "Norwich",
+    "population": 3393
+  },
+  {
+    "town": "Orange",
+    "population": 1075
+  },
+  {
+    "town": "Orwell",
+    "population": 1245
+  },
+  {
+    "town": "Panton",
+    "population": 670
+  },
+  {
+    "town": "Pawlet",
+    "population": 1459
+  },
+  {
+    "town": "Peacham",
+    "population": 726
+  },
+  {
+    "town": "Peru",
+    "population": 371
+  },
+  {
+    "town": "Pittsfield",
+    "population": 543
+  },
+  {
+    "town": "Pittsford",
+    "population": 2943
+  },
+  {
+    "town": "Plainfield",
+    "population": 1257
+  },
+  {
+    "town": "Plymouth",
+    "population": 615
+  },
+  {
+    "town": "Pomfret",
+    "population": 898
+  },
+  {
+    "town": "Poultney",
+    "population": 3387
+  },
+  {
+    "town": "Pownal",
+    "population": 3490
+  },
+  {
+    "town": "Proctor",
+    "population": 1705
+  },
+  {
+    "town": "Putney",
+    "population": 2700
+  },
+  {
+    "town": "Randolph",
+    "population": 4762
+  },
+  {
+    "town": "Reading",
+    "population": 659
+  },
+  {
+    "town": "Readsboro",
+    "population": 751
+  },
+  {
+    "town": "Richford",
+    "population": 2322
+  },
+  {
+    "town": "Richmond",
+    "population": 4093
+  },
+  {
+    "town": "Ripton",
+    "population": 582
+  },
+  {
+    "town": "Rochester",
+    "population": 1126
+  },
+  {
+    "town": "Rockingham",
+    "population": 5190
+  },
+  {
+    "town": "Roxbury",
+    "population": 693
+  },
+  {
+    "town": "Royalton",
+    "population": 2771
+  },
+  {
+    "town": "Rupert",
+    "population": 706
+  },
+  {
+    "town": "Rutland",
+    "population": 20257
+  },
+  {
+    "town": "Ryegate",
+    "population": 1164
+  },
+  {
+    "town": "Salisbury",
+    "population": 1128
+  },
+  {
+    "town": "Sandgate",
+    "population": 403
+  },
+  {
+    "town": "Searsburg",
+    "population": 108
+  },
+  {
+    "town": "Shaftsbury",
+    "population": 3554
+  },
+  {
+    "town": "Sharon",
+    "population": 1497
+  },
+  {
+    "town": "Sheffield",
+    "population": 700
+  },
+  {
+    "town": "Shelburne",
+    "population": 7449
+  },
+  {
+    "town": "Sheldon",
+    "population": 2207
+  },
+  {
+    "town": "Shoreham",
+    "population": 1268
+  },
+  {
+    "town": "Shrewsbury",
+    "population": 1044
+  },
+  {
+    "town": "Somerset",
+    "population": 3
+  },
+  {
+    "town": "South Burlington",
+    "population": 18400
+  },
+  {
+    "town": "South Hero",
+    "population": 1634
+  },
+  {
+    "town": "Springfield",
+    "population": 9284
+  },
+  {
+    "town": "St. Albans",
+    "population": 13030
+  },
+  {
+    "town": "St. George",
+    "population": 680
+  },
+  {
+    "town": "St. Johnsbury",
+    "population": 7591
+  },
+  {
+    "town": "Stamford",
+    "population": 818
+  },
+  {
+    "town": "Stannard",
+    "population": 220
+  },
+  {
+    "town": "Starksboro",
+    "population": 1769
+  },
+  {
+    "town": "Stockbridge",
+    "population": 733
+  },
+  {
+    "town": "Stowe",
+    "population": 4390
+  },
+  {
+    "town": "Strafford",
+    "population": 1102
+  },
+  {
+    "town": "Stratton",
+    "population": 213
+  },
+  {
+    "town": "Sudbury",
+    "population": 553
+  },
+  {
+    "town": "Sunderland",
+    "population": 950
+  },
+  {
+    "town": "Sutton",
+    "population": 1030
+  },
+  {
+    "town": "Swanton",
+    "population": 6436
+  },
+  {
+    "town": "Thetford",
+    "population": 2600
+  },
+  {
+    "town": "Tinmouth",
+    "population": 619
+  },
+  {
+    "town": "Topsham",
+    "population": 1174
+  },
+  {
+    "town": "Townshend",
+    "population": 1223
+  },
+  {
+    "town": "Troy",
+    "population": 1642
+  },
+  {
+    "town": "Tunbridge",
+    "population": 1288
+  },
+  {
+    "town": "Underhill",
+    "population": 3044
+  },
+  {
+    "town": "Vergennes",
+    "population": 2584
+  },
+  {
+    "town": "Vernon",
+    "population": 2192
+  },
+  {
+    "town": "Vershire",
+    "population": 723
+  },
+  {
+    "town": "Victory",
+    "population": 61
+  },
+  {
+    "town": "Waitsfield",
+    "population": 1726
+  },
+  {
+    "town": "Walden",
+    "population": 932
+  },
+  {
+    "town": "Wallingford",
+    "population": 2055
+  },
+  {
+    "town": "Waltham",
+    "population": 478
+  },
+  {
+    "town": "Wardsboro",
+    "population": 890
+  },
+  {
+    "town": "Warner's Grant",
+    "population": 0
+  },
+  {
+    "town": "Warren",
+    "population": 1704
+  },
+  {
+    "town": "Warren's Gore",
+    "population": 4
+  },
+  {
+    "town": "Washington",
+    "population": 1031
+  },
+  {
+    "town": "Waterbury",
+    "population": 5102
+  },
+  {
+    "town": "Waterford",
+    "population": 1285
+  },
+  {
+    "town": "Waterville",
+    "population": 685
+  },
+  {
+    "town": "Weathersfield",
+    "population": 2810
+  },
+  {
+    "town": "Wells",
+    "population": 1144
+  },
+  {
+    "town": "West\nFairlee",
+    "population": 659
+  },
+  {
+    "town": "West Haven",
+    "population": 263
+  },
+  {
+    "town": "West Rutland",
+    "population": 2283
+  },
+  {
+    "town": "West Windsor",
+    "population": 1095
+  },
+  {
+    "town": "Westfield",
+    "population": 527
+  },
+  {
+    "town": "Westford",
+    "population": 2043
+  },
+  {
+    "town": "Westminster",
+    "population": 3132
+  },
+  {
+    "town": "Westmore",
+    "population": 347
+  },
+  {
+    "town": "Weston",
+    "population": 563
+  },
+  {
+    "town": "Weybridge",
+    "population": 827
+  },
+  {
+    "town": "Wheelock",
+    "population": 808
+  },
+  {
+    "town": "Whiting",
+    "population": 420
+  },
+  {
+    "town": "Whitingham",
+    "population": 1350
+  },
+  {
+    "town": "Williamstown",
+    "population": 3394
+  },
+  {
+    "town": "Williston",
+    "population": 8962
+  },
+  {
+    "town": "Wilmington",
+    "population": 1853
+  },
+  {
+    "town": "Windham",
+    "population": 416
+  },
+  {
+    "town": "Windsor",
+    "population": 3498
+  },
+  {
+    "town": "Winhall",
+    "population": 762
+  },
+  {
+    "town": "Winooski",
+    "population": 7239
+  },
+  {
+    "town": "Wolcott",
+    "population": 1720
+  },
+  {
+    "town": "Woodbury",
+    "population": 901
+  },
+  {
+    "town": "Woodford",
+    "population": 418
+  },
+  {
+    "town": "Woodstock",
+    "population": 3012
+  },
+  {
+    "town": "Worcester",
+    "population": "1001"
+  }
+]

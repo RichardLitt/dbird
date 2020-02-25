@@ -14,9 +14,18 @@
     "cheerio": "^1.0.0-rc.3",
     "colors": "^1.4.0",
     "geojson-geometries-lookup": "^0.3.1",
+    "d3": "^5.15.0",
+    "d3-geo": "^1.11.9",
+    "fs": "0.0.1-security",
     "htmlparser2": "^4.0.0",
     "meow": "^6.0.0",
     "moment": "^2.24.0",
-    "papaparse": "^5.1.0"
+    "papaparse": "^5.1.0",
+    "topojson": "^3.0.2",
+    "webpack": "^4.41.6"
+  },
+  "devDependencies": {
+    "csv-loader": "^3.0.2",
+    "webpack-cli": "^3.3.11"
   }
 }

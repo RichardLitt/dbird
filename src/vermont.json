@@ -136,7 +136,7 @@
                         [48, 49, 50, -28, -33]
                     ],
                     "properties": {
-                        "town": "AVERY'S GORE",
+                        "town": "AVERYS GORE",
                         "county": 9
                     }
                 }, {
@@ -145,7 +145,7 @@
                         [51, 52, 53, -29, -51]
                     ],
                     "properties": {
-                        "town": "WARREN'S GORE",
+                        "town": "WARRENS GORE",
                         "county": 9
                     }
                 }, {
@@ -913,7 +913,7 @@
                         [-326, -314]
                     ],
                     "properties": {
-                        "town": "BARRE",
+                        "town": "BARRE CITY",
                         "county": 23
                     }
                 }, {
@@ -922,7 +922,7 @@
                         [-312, -293, -276]
                     ],
                     "properties": {
-                        "town": "BUEL'S GORE",
+                        "town": "BUELS GORE",
                         "county": 7
                     }
                 }, {

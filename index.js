@@ -151,19 +151,7 @@ async function firstTimeList (opts) {
   const dataByDate = {}
   const speciesIndex = {}
 
-  // Sort by the amount of unique entries per day
-  data.forEach((e) => {
-    const period = moment(e.Date, momentFormat(e.Date)).format(dateFormat)
-    const specie = e['Scientific Name']
-    if (!speciesIndex[specie]) {
-      if (!dataByDate[period]) {
-        dataByDate[period] = [e]
-      } else {
-        dataByDate[period].push(e)
-      }
-      speciesIndex[specie] = e.Date
-    }
-  })
+  data = countUniqueSpecies(data)
 
   let i = 1
   // TODO Doesn't work for MyEBirdData for some reason
@@ -175,26 +163,10 @@ async function firstTimeList (opts) {
   })
 }
 
-/* node cli.js count -i=MyEBirdData.csv --town="Fayston" --state=Vermont
-As this is set up, it will currently return only the first time I saw species in each town provided, in Vermont */
-async function count (opts) {
-  const geojson = JSON.parse(await fs.readFile('VT_Data__Town_Boundaries.geojson', 'utf8'))
-  const glookup = new GeoJsonGeometriesLookup(geojson)
-  opts.state = 'Vermont'
-  const dateFormat = parseDateformat('day')
-  let data = orderByDate(locationFilter(await getData(opts.input), opts), opts)
-  const dataByDate = {}
+// Sort by the amount of unique entries per day
+function countUniqueSpecies (data, dateFormat) {
   const speciesIndex = {}
-
-  data = data.filter(x => {
-    let point = {type: "Point", coordinates: [x.Longitude, x.Latitude]}
-    let town = glookup.getContainers(point)
-    if (town.features[0].properties.TOWNNAMEMC) {
-      return town.features[0].properties.TOWNNAMEMC === opts.town
-    }
-  })
-
-  // Sort by the amount of unique entries per day
+  const dataByDate = {}
   data.forEach((e) => {
     const period = moment(e.Date, momentFormat(e.Date)).format(dateFormat)
     const specie = e['Scientific Name']
@@ -208,14 +180,69 @@ async function count (opts) {
     }
   })
 
-  let i = 1
-  // TODO Doesn't work for MyEBirdData for some reason
-  _.sortBy(createPeriodArray(dataByDate), 'Date').forEach((e) => {
-    e.Species.forEach((specie) => {
-      console.log(`${i} | ${specie['Common Name']} - ${specie['Scientific Name']} | ${opts.town}, ${(specie.County) ? specie.County + ', ' : ''}${specie['State']} | ${e.Date}`)
-      i++
+  return dataByDate
+}
+
+function getAllTowns (geojson) {
+  const towns = []
+  geojson.features.forEach((t) => {
+    towns.push({
+      town: t.properties.TOWNNAMEMC
     })
   })
+  return towns
+}
+
+function filterByTownName (data, name) {
+  return data.filter(x => x.Town === name)
+}
+
+/* node cli.js count -i=MyEBirdData.csv --town="Fayston" --state=Vermont
+As this is set up, it will currently return only the first time I saw species in each town provided, in Vermont */
+async function count (opts) {
+  const geojson = JSON.parse(await fs.readFile('VT_Data__Town_Boundaries.geojson', 'utf8'))
+  const glookup = new GeoJsonGeometriesLookup(geojson)
+  opts.state = 'Vermont'
+  const dateFormat = parseDateformat('day')
+  let data = orderByDate(locationFilter(await getData(opts.input), opts), opts)
+  data.forEach(d => {
+    let point = {type: "Point", coordinates: [d.Longitude, d.Latitude]}
+    let town = glookup.getContainers(point)
+    if (town.features[0].properties.TOWNNAMEMC) {
+      d.Town = town.features[0].properties.TOWNNAMEMC
+    }
+  })
+  if (opts.all) {
+    const towns = getAllTowns(geojson)
+    towns.forEach(t => {
+      let i = 0
+      t.species = []
+      t.speciesByDate = countUniqueSpecies(filterByTownName(data, t.town), dateFormat)
+      _.sortBy(createPeriodArray(t.speciesByDate), 'Date').forEach((e) => {
+        e.Species.forEach((specie) => {
+          t.species.push(specie['Common Name'])
+          i++
+        })
+      })
+      t.speciesTotal = i
+    })
+
+    fs.writeFile('vt_town_counts.json', JSON.stringify(towns), 'utf8')
+
+  } else if (opts.town) {
+    data = countUniqueSpecies(filterByTownName(data, opts.town), dateFormat)
+
+    let i = 1
+    // TODO Doesn't work for MyEBirdData for some reason
+    _.sortBy(createPeriodArray(data), 'Date').forEach((e) => {
+      e.Species.forEach((specie) => {
+        console.log(`${i} | ${specie['Common Name']} - ${specie['Scientific Name']} | ${opts.town}, ${(specie.County) ? specie.County + ', ' : ''}${specie['State']} | ${e.Date}`)
+        i++
+      })
+    })
+
+  }
+
 }
 
 async function quadBirds (opts) {

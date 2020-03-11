@@ -2,6 +2,7 @@ const fs = require('fs').promises
 const _ = require('lodash')
 const Papa = require('papaparse')
 const moment = require('moment')
+const GeoJsonGeometriesLookup = require('geojson-geometries-lookup');
 
 function removeSpuh (arr) {
   const newArr = []
@@ -72,12 +73,20 @@ function createPeriodArray (data) {
 }
 
 function locationFilter (list, opts) {
-  // TODO Make State and Country and County work
+  // TODO Make State and Country and County and Town work
   if (!opts.state) {
     return list
   }
+
+
   return list.filter(x => {
-    return x.State === opts.state
+    // TODO Add a mapping from Vermont to US-VT, for all states and provinces
+    if (x["State/Province"] === 'US-VT') {
+      x.State = 'Vermont'
+    }
+    if (x.State) {
+      return x.State === opts.state
+    }
   })
 }
 
@@ -166,6 +175,49 @@ async function firstTimeList (opts) {
   })
 }
 
+/* node cli.js count -i=MyEBirdData.csv --town="Fayston" --state=Vermont
+As this is set up, it will currently return only the first time I saw species in each town provided, in Vermont */
+async function count (opts) {
+  const geojson = JSON.parse(await fs.readFile('VT_Data__Town_Boundaries.geojson', 'utf8'))
+  const glookup = new GeoJsonGeometriesLookup(geojson)
+  opts.state = 'Vermont'
+  const dateFormat = parseDateformat('day')
+  let data = orderByDate(locationFilter(await getData(opts.input), opts), opts)
+  const dataByDate = {}
+  const speciesIndex = {}
+
+  data = data.filter(x => {
+    let point = {type: "Point", coordinates: [x.Longitude, x.Latitude]}
+    let town = glookup.getContainers(point)
+    if (town.features[0].properties.TOWNNAMEMC) {
+      return town.features[0].properties.TOWNNAMEMC === opts.town
+    }
+  })
+
+  // Sort by the amount of unique entries per day
+  data.forEach((e) => {
+    const period = moment(e.Date, momentFormat(e.Date)).format(dateFormat)
+    const specie = e['Scientific Name']
+    if (!speciesIndex[specie]) {
+      if (!dataByDate[period]) {
+        dataByDate[period] = [e]
+      } else {
+        dataByDate[period].push(e)
+      }
+      speciesIndex[specie] = e.Date
+    }
+  })
+
+  let i = 1
+  // TODO Doesn't work for MyEBirdData for some reason
+  _.sortBy(createPeriodArray(dataByDate), 'Date').forEach((e) => {
+    e.Species.forEach((specie) => {
+      console.log(`${i} | ${specie['Common Name']} - ${specie['Scientific Name']} | ${opts.town}, ${(specie.County) ? specie.County + ', ' : ''}${specie['State']} | ${e.Date}`)
+      i++
+    })
+  })
+}
+
 async function quadBirds (opts) {
   if (!opts.year) {
     opts.year = moment().format('YYYY')
@@ -240,5 +292,6 @@ module.exports = {
   firstTimes,
   biggestTime,
   firstTimeList,
-  quadBirds
+  quadBirds,
+  count
 }

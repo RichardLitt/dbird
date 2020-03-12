@@ -2,10 +2,10 @@ const path = require('path')
 
 module.exports = {
   mode: 'none',
-  entry: './src/d3-testing.js',
+  entry: './src/d3-towns.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'd3-testing.bundle.js',
+    filename: 'd3-towns.bundle.js',
     crossOriginLoading: 'anonymous'
   },
   devServer: {

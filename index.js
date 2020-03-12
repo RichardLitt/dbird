@@ -193,13 +193,9 @@ function getAllTowns (geojson) {
   return towns
 }
 
-function filterByTownName (data, name) {
-  return data.filter(x => x.Town === name)
-}
-
 /* node cli.js count -i=MyEBirdData.csv --town="Fayston" --state=Vermont
 As this is set up, it will currently return only the first time I saw species in each town provided, in Vermont */
-async function count (opts) {
+async function towns (opts) {
   const geojson = JSON.parse(await fs.readFile('VT_Data__Town_Boundaries.geojson', 'utf8'))
   const glookup = new GeoJsonGeometriesLookup(geojson)
   opts.state = 'Vermont'
@@ -217,7 +213,7 @@ async function count (opts) {
     towns.forEach(t => {
       let i = 0
       t.species = []
-      t.speciesByDate = countUniqueSpecies(filterByTownName(data, t.town), dateFormat)
+      t.speciesByDate = countUniqueSpecies(data.filter(x => x.Town === t.town), dateFormat)
       _.sortBy(createPeriodArray(t.speciesByDate), 'Date').forEach((e) => {
         e.Species.forEach((specie) => {
           t.species.push(specie['Common Name'])
@@ -230,7 +226,7 @@ async function count (opts) {
     fs.writeFile('vt_town_counts.json', JSON.stringify(towns), 'utf8')
 
   } else if (opts.town) {
-    data = countUniqueSpecies(filterByTownName(data, opts.town), dateFormat)
+    data = countUniqueSpecies(data.filter(x => x.Town === opts.town), dateFormat)
 
     let i = 1
     // TODO Doesn't work for MyEBirdData for some reason
@@ -240,9 +236,51 @@ async function count (opts) {
         i++
       })
     })
+  }
+}
 
+
+/* node cli.js count -i=MyEBirdData.csv --town="Fayston" --state=Vermont
+As this is set up, it will currently return only the first time I saw species in each town provided, in Vermont */
+async function regions (opts) {
+  const geojson = JSON.parse(await fs.readFile('Polygon_VT_Biophysical_Regions.json', 'utf8'))
+  const glookup = new GeoJsonGeometriesLookup(geojson)
+  opts.state = 'Vermont'
+  const dateFormat = parseDateformat('day')
+  let data = orderByDate(locationFilter(await getData(opts.input), opts), opts)
+  data.forEach(d => {
+    let point = {type: "Point", coordinates: [d.Longitude, d.Latitude]}
+    let region = glookup.getContainers(point)
+    // Move it just below the border. This is likely to be the main issue with this map.
+    if (!region.features[0]) {
+      point = {type: "Point", coordinates: [d.Longitude, 45-(Math.abs(parseFloat(d.Latitude))-45).toString()]}
+      region = glookup.getContainers(point)
+    }
+    d.Region = region.features[0].properties.name
+  })
+
+  function getRegions (geojson) {
+    const regions = []
+    geojson.features.forEach((r) => regions.push({ region: r.properties.name }))
+    return regions
   }
 
+  const regions = getRegions(geojson)
+  regions.forEach(r => {
+    let i = 0
+    r.species = []
+    r.speciesByDate = countUniqueSpecies(data.filter(x => x.Region === r.region), dateFormat)
+    _.sortBy(createPeriodArray(r.speciesByDate), 'Date').forEach((e) => {
+      e.Species.forEach((specie) => {
+        r.species.push(specie['Common Name'])
+        i++
+      })
+    })
+    r.speciesTotal = i
+    console.log(`Region: ${r.region}. Species count: ${r.speciesTotal}.`)
+  })
+
+  // fs.writeFile('vt_region_counts.json', JSON.stringify(regions), 'utf8')
 }
 
 async function quadBirds (opts) {
@@ -320,5 +358,6 @@ module.exports = {
   biggestTime,
   firstTimeList,
   quadBirds,
-  count
+  towns,
+  regions
 }

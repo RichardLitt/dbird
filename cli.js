@@ -20,7 +20,8 @@ const cli = meow(`
     first-year    Show your first lists
     first-month   Show your first lists
     first-day     Show your first lists
-    count         Show your counts
+    towns         Show your town counts
+    regions       Show your region counts
 
   Options
     --input, -i The input file
@@ -28,7 +29,8 @@ const cli = meow(`
     --state     Search by state
     --county    Search by county
     --year      Limit results to a given year
-    --town      Search by town
+    --town      Search by towns in Vemront
+    --region    Search by biophysical regions in Vermont
     --list, -l  List all of the species
 
   Examples
@@ -58,7 +60,10 @@ const cli = meow(`
       type: 'boolean',
       alias: 'l'
     },
-    count: {
+    towns: {
+      type: 'string'
+    },
+    regions: {
       type: 'string'
     }
   }
@@ -71,8 +76,10 @@ const cli = meow(`
 async function run () {
   if (cli.input[0] === 'quad') {
     await main.quadBirds(cli.flags)
-  } else if (cli.input[0] === 'count') {
-    await main.count(cli.flags)
+  } else if (cli.input[0] === 'towns') {
+    await main.towns(cli.flags)
+  } else if (cli.input[0] === 'regions') {
+    await main.regions(cli.flags)
   } else if (cli.input[0] === 'big') {
     cli.flags.list = undefined
     let timespan = 'year'

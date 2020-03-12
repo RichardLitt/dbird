@@ -20,7 +20,8 @@ var path = d3Geo.geoPath()
   .projection(projection)
 
 // Create SVG Element
-var svg = d3.select('body').append('svg')
+var svg = d3.select('#map')
+  .append('svg')
   .attr('width', width)
   .attr('height', height)
 
@@ -33,24 +34,23 @@ var color = d3
 // Legend Stuff
 
 var y = d3.scaleSqrt()
-    .domain([0, 50000])
-    .range([0, 325])
-//
-// var yAxis = d3.svg.axis()
-//     .scale(y)
+    .domain([0, 119])
+    .range([600, 600])
+
+// var yAxis = d3.axisLeft(y)
 //     .tickValues(color.domain())
-//     .orient('right')
 
 // Load TopoJSON
 for (var i = 0; i < data.length; i++) {
   var dataTown = data[i].town
-  var dataPop = parseFloat(data[i].speciesTotal)
+  var speciesTotals = parseFloat(data[i].speciesTotal)
 
   for (var j = 0; j < vt.objects.vt_towns.geometries.length; j++) {
     var jsonTown = vt.objects.vt_towns.geometries[j].properties.town
 
     if (dataTown.toUpperCase() == jsonTown) {
-      vt.objects.vt_towns.geometries[j].properties.speciesTotal = dataPop
+      vt.objects.vt_towns.geometries[j].properties.speciesTotal = speciesTotals
+      vt.objects.vt_towns.geometries[j].properties.species = data[i].species
       break
     }
   }
@@ -89,9 +89,6 @@ svg.selectAll('.subunit')
         .append('path')
         .attr('d', path)
         .style('fill', function (d) {
-
-          // TODO Call dbird.countAllTowns() and get a mapping of town counts to bird counts
-
           var speciesTotal = d.properties.speciesTotal
 
           if (speciesTotal) {
@@ -118,6 +115,14 @@ svg.selectAll('.subunit')
 
           d3.select(this)
             .style('fill', '#509e2f')
+
+            console.log(d.properties.town)
+
+          d3.select('#town-name')
+            .text([d.properties.town])
+
+          d3.select('#list')
+            .html((d.properties.species.length > 0) ? `<li>${d.properties.species.join('</li><li>')}</li>` : 'No species logged.')
         })
         .on('mouseout', function (d) {
           d3.select('#tooltip').remove()
@@ -133,6 +138,12 @@ svg.selectAll('.subunit')
                 return '#ddd'
               }
             })
+
+            d3.select('#town-name')
+              .text()
+
+            d3.select('#list')
+              .text()
         })
 
 // Color lakes

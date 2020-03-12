@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<style>
+
+    svg {
+        font: 10px sans-serif;
+        display: inline;
+    }
+
+    .key path {
+        display: none;
+    }
+
+    .key line {
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .key text {
+        font-size: 10px;
+    }
+    #map, #list-container {
+      display: inline-block;
+      float: left;
+    }
+    #list-container {
+      width: 300px;
+    }
+</style>
+<body>
+  <div class="text">
+    <h1>Vermont Town Birding</h1>
+  </div>
+  <div class="container">
+    <div id="map" class="">
+    </div>
+    <div id="list-container">
+      <h4 id="town-name"></h4>
+      <ul id="list">
+      </ul>
+    </div>
+  </div>
+  <script src="d3-towns.bundle.js"></script>
+</body>

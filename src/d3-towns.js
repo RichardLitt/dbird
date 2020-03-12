@@ -116,8 +116,6 @@ svg.selectAll('.subunit')
           d3.select(this)
             .style('fill', '#509e2f')
 
-            console.log(d.properties.town)
-
           d3.select('#town-name')
             .text([d.properties.town])
 

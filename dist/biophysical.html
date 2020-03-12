@@ -26,16 +26,32 @@
     }
 </style>
 <body>
-  <div class="text">
-    <h1>Vermont Biophysical Region Counts</h1>
-  </div>
-  <div class="container">
-    <div id="map" class="">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Vermont eBird Extensions</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Towns</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Biophysical Regions <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
     </div>
-    <div id="list">
-      <h4 id="town-name"></h4>
-      <p id="list">
-      </p>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div id="map" class="col-sm">
+        <div id="map"></div>
+      </div>
+      <div class="col-sm" id="list-container">
+        <h4 id="region"></h4>
+        <ul id="list"></ul>
+      </div>
     </div>
   </div>
   <script src="d3-biophysical.bundle.js"></script>

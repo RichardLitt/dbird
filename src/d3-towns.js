@@ -1,5 +1,7 @@
 import data from './vt_town_counts.json'
 import vt from './vermont.json'
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 const d3 = require('d3')
 const d3Geo = require('d3-geo')
 const topojson = require('topojson')
@@ -116,8 +118,12 @@ svg.selectAll('.subunit')
           d3.select(this)
             .style('fill', '#509e2f')
 
+          function capitalizeFirstLetter(string) {
+              return string.charAt(0).toUpperCase() + string.slice(1);
+          }
+
           d3.select('#town-name')
-            .text([d.properties.town])
+            .text([capitalizeFirstLetter(d.properties.town.toLowerCase())])
 
           d3.select('#list')
             .html((d.properties.species.length > 0) ? `<li>${d.properties.species.join('</li><li>')}</li>` : 'No species logged.')

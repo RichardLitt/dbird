@@ -1,5 +1,7 @@
 import data from './vt_region_counts.json'
 import vt from './Polygon_VT_Biophysical_Regions.json'
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 const d3 = require('d3')
 const d3Geo = require('d3-geo')
 
@@ -52,6 +54,7 @@ for (var i = 0; i < data.length; i++) {
     var jsonRegion = vt.features[j].properties.name
     if (dataRegion == jsonRegion) {
       vt.features[j].properties.speciesTotal = speciesTotal
+      vt.features[j].properties.species = data[i].species
       break
     }
   }
@@ -88,6 +91,16 @@ svg.selectAll('.subunit')
 
     d3.select(this)
       .style('fill', '#509e2f')
+
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+    d3.select('#region')
+      .text([capitalizeFirstLetter(d.properties.name.toLowerCase())])
+
+    d3.select('#list')
+      .html((d.properties.species.length > 0) ? `<li>${d.properties.species.join('</li><li>')}</li>` : 'No species logged.')
   })
   .on('mouseout', function (d) {
     d3.select('#tooltip').remove()
@@ -103,4 +116,10 @@ svg.selectAll('.subunit')
           return '#ddd'
         }
       })
+
+    d3.select('#town-name')
+      .text()
+
+    d3.select('#list')
+      .text()
   })

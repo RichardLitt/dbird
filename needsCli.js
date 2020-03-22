@@ -19,8 +19,8 @@ function sortNeeds (needs) {
 async function go () {
   const list = await dbird()
   if (process.argv[2] === 'web') {
-    console.log(`## Washington County, Vermont Needs
-      `)
+    console.log(`## Washington County, Vermont Needs for 2020
+`)
   }
 
   _.forEach(

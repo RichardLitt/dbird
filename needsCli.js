@@ -11,7 +11,7 @@ function sortNeeds (needs) {
     str = str + '🎤'
   }
   if (needs.sighting) {
-    str = '🔭📷🎤'
+    str = '🔭'
   }
   return str
 }

@@ -26,7 +26,7 @@ async function go () {
   _.forEach(
     _.sortBy(list, [(n) => n.rarity]).reverse(), (v, k) => {
       if (process.argv[2] === 'web') {
-        console.log(`* ${colors.yellow(v.rarity.toFixed(2) + '%')}\t${sortNeeds(v.needs)}\t${colors.blue(v.common)} - ${colors.italic(v.scientific)}`)
+        console.log(`* ${v.rarity.toFixed(0) + '%'}\t${sortNeeds(v.needs)}\t**${v.common}** (_${v.scientific}_)`)
       } else {
         console.log(`${colors.yellow(v.rarity.toFixed(2) + '%')}\t${sortNeeds(v.needs)}\t${colors.blue(v.common)} - ${colors.italic(v.scientific)}`)
       }

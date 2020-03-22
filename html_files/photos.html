@@ -89,7 +89,7 @@
 	
 	
 	<!-- theme defaults to ebird -->
-	<link rel="stylesheet" media="all" href="/content/eBirdCommon/lib/css/explore.ui.min.css?v=31">
+	<link rel="stylesheet" media="all" href="/content/eBirdCommon/lib/css/explore.ui.min.css?v=37">
 
 
 	
@@ -210,18 +210,6 @@
 	
 
 	
-	
-	
-	
-	
-	
-	
-
-	
-
-	
-
-	
 
 	
 	
@@ -236,6 +224,20 @@
 	
 
 	
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+
+	
 	
 	
 
@@ -251,6 +253,8 @@
 
 	
 	
+	
+
 	
 
 	
@@ -349,7 +353,7 @@
 						
 						
 						
-							<li><a href="https://help.ebird.org/?t=" class="HeaderEbird-link ">Help</a></li>
+							<li><a href="https://support.ebird.org" class="HeaderEbird-link ">Help</a></li>
 						
 					</ul>
 				</div>
@@ -467,18 +471,6 @@
 	
 
 	
-	
-	
-	
-	
-	
-	
-
-	
-
-	
-
-	
 
 	
 	
@@ -493,6 +485,20 @@
 	
 
 	
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+
+	
 	
 	
 
@@ -508,6 +514,8 @@
 
 	
 	
+	
+
 	
 
 	
@@ -595,7 +603,7 @@
 			</button>
 		</div>
 		<div class="Modal-content Modal-content Modal-content--scrollable">
-			"Targets" creates a prioritized list of county, state, or life birds that you can expect to find in a region. Enter a region, range of months, and then select the list you'd like to compare. eBird compares your selected list against the full species list for the selected region and months, creating a target species list that can be sorted taxonomically or by <a href="http://help.ebird.org/customer/portal/articles/1210247">frequency</a> (the percentage of complete checklists that have reported the species).
+			"Targets" creates a prioritized list of county, state, or life birds that you can expect to find in a region. Enter a region, range of months, and then select the list you'd like to compare. eBird compares your selected list against the full species list for the selected region and months, creating a target species list that can be sorted taxonomically or by <a href="http://support.ebird.org/en/support/solutions/articles/48000948655-ebird-glossary#anchorF">frequency</a> (the percentage of complete checklists that have reported the species).
 		</div>
 		<div class="Modal-footer Modal-footer Modal-footer--centered Modal-footer--small">
 			<!-- <button class="Button Button--hollow" data-close>Learn more</button> -->
@@ -661,7 +669,7 @@
 														<div data-suggest=""
 															data-suggest-url="https://api.ebird.org/v2/ref/region/find?key=jfekjedvescr&q=%QUERY&amp;locale=en"
 															data-suggest-id="targets-region-input"
-															data-suggest-value="Lamoille County, Vermont, US"
+															data-suggest-value="Washington County, Vermont, US"
 															data-suggest-placeholder="Enter a county, state, province, or country"
 															data-suggest-name="region"
 															data-suggest-minlength="2"
@@ -677,7 +685,7 @@
 									</fieldset>
 
 									
-									<input id="targets-region-input-hidden" name="r1" type="hidden" value="US-VT-015"/>
+									<input id="targets-region-input-hidden" name="r1" type="hidden" value="US-VT-023"/>
 
 								</div>
 
@@ -696,8 +704,8 @@
 											
 											
 											
-											
 												
+											
 											
 										
 									
@@ -727,10 +735,10 @@
 													</button>
 												
 											
-											<button class="Button Button--fauxRadio "  name="monthRange" role="radio" type="button" value="9">
-												September
+											<button class="Button Button--fauxRadio is-checked" data-checked name="monthRange" role="radio" type="button" value="3">
+												March
 											</button>
-											<button class="Button Button--fauxRadio is-checked" data-checked name="monthRange" role="radio" type="button" value="custom">
+											<button class="Button Button--fauxRadio "  name="monthRange" role="radio" type="button" value="custom">
 												Custom
 											</button>
 										</div>
@@ -744,13 +752,13 @@
 											<div class="GridFlex-cell u-md-size1of2">
 												<label for="#targets-begin-month">Beginning month</label>
 												<select id="targets-begin-month" name="bmo">
-													<option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9" selected="selected">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option>
+													<option value="1">Jan</option><option value="2">Feb</option><option value="3" selected="selected">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option>
 												</select>
 											</div>
 											<div class="GridFlex-cell u-md-size1of2">
 												<label for="#targets-end-month">Ending month</label>
 												<select id="targets-end-month" name="emo">
-													<option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10" selected="selected">Oct</option><option value="11">Nov</option><option value="12">Dec</option>
+													<option value="1">Jan</option><option value="2">Feb</option><option value="3" selected="selected">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option>
 												</select>
 											</div>
 										</div>
@@ -776,7 +784,7 @@
 												<label class="is-visuallyHidden" for="#targets-comparison-region">List region</label>
 												
 												<select id="targets-comparison-region" name="r2">
-													<option value="US-VT-015" selected="selected">Lamoille County, Vermont, US</option><option value="US-VT">Vermont, US</option><option value="US">United States</option><option value="aba">ABA Area</option><option value="world">World</option>
+													<option value="US-VT-023" selected="selected">Washington County, Vermont, US</option><option value="US-VT">Vermont, US</option><option value="US">United States</option><option value="aba">ABA Area</option><option value="world">World</option>
 												</select>
 											</div>
 
@@ -787,10 +795,10 @@
 													
 														
 														
-															<option value="life" selected >Life List</option>
-															<option value="year"  >Year List (2019)</option>
-															<option value="month"  >Month List (September, all years)</option>
-															<option value="day"  >Day List (29 September, all years)</option>
+															<option value="life"  >Life List</option>
+															<option value="year" selected >Year List (2020)</option>
+															<option value="month"  >Month List (March, all years)</option>
+															<option value="day"  >Day List (21 March, all years)</option>
 														
 													
 													
@@ -862,7 +870,7 @@
 				<div class="Page-section-inner Page-section-inner--lg">
 					<div class="GridFlex">
 						<div class="GridFlex-cell">
-							<p class="u-text-3 u-margin-none" style="text-align:center;">Based on 1,726 complete checklists</p>
+							<p class="u-text-3 u-margin-none" style="text-align:center;">Based on 1,979 complete checklists</p>
 						</div>
 					</div>
 				</div>
@@ -876,15 +884,15 @@
 							
 							<div class="SectionHeading u-stack-sm" style="flex-wrap:nowrap;">
 								<div class="SectionHeading-heading">
-									<strong class="Heading Heading--h1" style="display:inline; color:#4ca800;">21</strong>
+									<strong class="Heading Heading--h1" style="display:inline; color:#4ca800;">20</strong>
 
 									
 										
 											
 											
 											
+												species observed in <a href="subnational2/US-VT-023"><strong>Washington County, Vermont, US</strong></a> in <strong>Mar</strong> that you need for your <strong>Washington County Year List</strong>
 											
-												species observed in <a href="subnational2/US-VT-015"><strong>Lamoille County, Vermont, US</strong></a> from <strong>Sep</strong> through <strong>Oct</strong> that you need for your <strong>Lamoille County Life List</strong>
 											
 										
 										
@@ -901,7 +909,7 @@
 								
 								
 									<div class="SectionHeading-link SectionHeading-link--right">
-										<a target="_blank" href="/targets?r1=US-VT-015&r2=US-VT-015&t2=life&bmo=9&emo=10&mediaType=P&print=true" class="Button Button--small Button--hollow u-margin-none">Print</a>
+										<a target="_blank" href="/targets?r1=US-VT-023&r2=US-VT-023&t2=year&bmo=3&emo=3&mediaType=P&print=true" class="Button Button--small Button--hollow u-margin-none">Print</a>
 									</div>
 								
 							</div>
@@ -918,12 +926,12 @@
 										<a href="#RadioGroup-sort" class="RadioGroup-toggler" aria-controls="RadioGroup-sort" aria-expanded="false"><span>Sort by</span><svg class="Icon Icon--triangleDown" role="presentation"><use xlink:href="#Icon--triangleDown"></use></svg></a>
 										<span id="RadioGroup-sort" class="RadioGroup-panel RadioGroup-panel--alignRight" data-panel aria-hidden="true" data-focus-on="a">
 											<div>
-												<a href="/targets?r1=US-VT-015&r2=US-VT-015&t2=life&bmo=9&emo=10&mediaType=P&sortBy=freq&o=desc" class="Button Button--transparent u-margin-none" style="font-weight:bold; color:#212121;" >
+												<a href="/targets?r1=US-VT-023&r2=US-VT-023&t2=year&bmo=3&emo=3&mediaType=P&sortBy=freq&o=desc" class="Button Button--transparent u-margin-none" style="font-weight:bold; color:#212121;" >
 													Frequency
 												</a>
 											</div>
 											<div>
-												<a href="/targets?r1=US-VT-015&r2=US-VT-015&t2=life&bmo=9&emo=10&mediaType=P&sortBy=taxon_order&o=asc" class="Button Button--transparent u-margin-none"  >
+												<a href="/targets?r1=US-VT-023&r2=US-VT-023&t2=year&bmo=3&emo=3&mediaType=P&sortBy=taxon_order&o=asc" class="Button Button--transparent u-margin-none"  >
 													Species
 												</a>
 											</div>
@@ -949,8 +957,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/bkcchi/US-VT-015" data-species-code="bkcchi">
-															Black-capped Chickadee <em class="sci">Poecile atricapillus</em>
+														<a href="/species/comgra/US-VT-023" data-species-code="comgra">
+															Common Grackle <em class="sci">Quiscalus quiscula</em>
 														</a>
 													
 													
@@ -960,21 +968,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="48.55156% frequency">
+									<div class="ResultsStats-stats" title="18.14047% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">48.55%</span>
+															<span class="StatsIcon-stat-count">18.14%</span>
 														
 													
 												</span>
 												<span class="StatsIcon-label">frequency</span>
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:48.55156%;">
+												<div class="ProgressBar-meter" style="width:18.14047%;">
 													
 													
 												</div>
@@ -986,7 +994,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/bkcchi?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/comgra?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1009,8 +1017,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/blujay/US-VT-015" data-species-code="blujay">
-															Blue Jay <em class="sci">Cyanocitta cristata</em>
+														<a href="/species/norcar/US-VT-023" data-species-code="norcar">
+															Northern Cardinal <em class="sci">Cardinalis cardinalis</em>
 														</a>
 													
 													
@@ -1020,21 +1028,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="42.93163% frequency">
+									<div class="ResultsStats-stats" title="16.57403% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">42.93%</span>
+															<span class="StatsIcon-stat-count">16.57%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:42.93163%;">
+												<div class="ProgressBar-meter" style="width:16.57403%;">
 													
 													
 												</div>
@@ -1046,7 +1054,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/blujay?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/norcar?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1069,8 +1077,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/amecro/US-VT-015" data-species-code="amecro">
-															American Crow <em class="sci">Corvus brachyrhynchos</em>
+														<a href="/species/pinsis/US-VT-023" data-species-code="pinsis">
+															Pine Siskin <em class="sci">Spinus pinus</em>
 														</a>
 													
 													
@@ -1080,21 +1088,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="40.38239% frequency">
+									<div class="ResultsStats-stats" title="11.67256% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">40.38%</span>
+															<span class="StatsIcon-stat-count">11.67%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:40.38239%;">
+												<div class="ProgressBar-meter" style="width:11.67256%;">
 													
 													
 												</div>
@@ -1106,7 +1114,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/amecro?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/pinsis?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1129,8 +1137,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/sonspa/US-VT-015" data-species-code="sonspa">
-															Song Sparrow <em class="sci">Melospiza melodia</em>
+														<a href="/species/turvul/US-VT-023" data-species-code="turvul">
+															Turkey Vulture <em class="sci">Cathartes aura</em>
 														</a>
 													
 													
@@ -1140,21 +1148,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="25.20278% frequency">
+									<div class="ResultsStats-stats" title="4.80040% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">25.20%</span>
+															<span class="StatsIcon-stat-count">4.80%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:25.20278%;">
+												<div class="ProgressBar-meter" style="width:4.8004%;">
 													
 													
 												</div>
@@ -1166,7 +1174,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/sonspa?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/turvul?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1189,8 +1197,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/amerob/US-VT-015" data-species-code="amerob">
-															American Robin <em class="sci">Turdus migratorius</em>
+														<a href="/species/brdowl/US-VT-023" data-species-code="brdowl">
+															Barred Owl <em class="sci">Strix varia</em>
 														</a>
 													
 													
@@ -1200,21 +1208,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="20.91541% frequency">
+									<div class="ResultsStats-stats" title="2.47600% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">20.92%</span>
+															<span class="StatsIcon-stat-count">2.48%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:20.91541%;">
+												<div class="ProgressBar-meter" style="width:2.476%;">
 													
 													
 												</div>
@@ -1226,7 +1234,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/amerob?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/brdowl?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1249,8 +1257,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/belkin1/US-VT-015" data-species-code="belkin1">
-															Belted Kingfisher <em class="sci">Megaceryle alcyon</em>
+														<a href="/species/amewoo/US-VT-023" data-species-code="amewoo">
+															American Woodcock <em class="sci">Scolopax minor</em>
 														</a>
 													
 													
@@ -1260,21 +1268,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="10.48667% frequency">
+									<div class="ResultsStats-stats" title="2.22335% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">10.49%</span>
+															<span class="StatsIcon-stat-count">2.22%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:10.48667%;">
+												<div class="ProgressBar-meter" style="width:2.22335%;">
 													
 													
 												</div>
@@ -1286,7 +1294,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/belkin1?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/amewoo?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1309,8 +1317,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/comrav/US-VT-015" data-species-code="comrav">
-															Common Raven <em class="sci">Corvus corax</em>
+														<a href="/species/rufgro/US-VT-023" data-species-code="rufgro">
+															Ruffed Grouse <em class="sci">Bonasa umbellus</em>
 														</a>
 													
 													
@@ -1320,21 +1328,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="10.19699% frequency">
+									<div class="ResultsStats-stats" title="1.76857% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">10.20%</span>
+															<span class="StatsIcon-stat-count">1.77%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:10.19699%;">
+												<div class="ProgressBar-meter" style="width:1.76857%;">
 													
 													
 												</div>
@@ -1346,7 +1354,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/comrav?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/rufgro?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1369,8 +1377,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/easpho/US-VT-015" data-species-code="easpho">
-															Eastern Phoebe <em class="sci">Sayornis phoebe</em>
+														<a href="/species/killde/US-VT-023" data-species-code="killde">
+															Killdeer <em class="sci">Charadrius vociferus</em>
 														</a>
 													
 													
@@ -1380,21 +1388,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="9.21205% frequency">
+									<div class="ResultsStats-stats" title="1.71804% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">9.21%</span>
+															<span class="StatsIcon-stat-count">1.72%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:9.21205%;">
+												<div class="ProgressBar-meter" style="width:1.71804%;">
 													
 													
 												</div>
@@ -1406,7 +1414,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/easpho?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/killde?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1429,8 +1437,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/grycat/US-VT-015" data-species-code="grycat">
-															Gray Catbird <em class="sci">Dumetella carolinensis</em>
+														<a href="/species/carwre/US-VT-023" data-species-code="carwre">
+															Carolina Wren <em class="sci">Thryothorus ludovicianus</em>
 														</a>
 													
 													
@@ -1440,21 +1448,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="8.92236% frequency">
+									<div class="ResultsStats-stats" title="1.51592% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">8.92%</span>
+															<span class="StatsIcon-stat-count">1.52%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:8.92236%;">
+												<div class="ProgressBar-meter" style="width:1.51592%;">
 													
 													
 												</div>
@@ -1466,7 +1474,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/grycat?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/carwre?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1489,8 +1497,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/comyel/US-VT-015" data-species-code="comyel">
-															Common Yellowthroat <em class="sci">Geothlypis trichas</em>
+														<a href="/species/evegro/US-VT-023" data-species-code="evegro">
+															Evening Grosbeak <em class="sci">Coccothraustes vespertinus</em>
 														</a>
 													
 													
@@ -1500,21 +1508,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="8.80649% frequency">
+									<div class="ResultsStats-stats" title="1.31379% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
 														
-															<span class="StatsIcon-stat-count">8.81%</span>
+															<span class="StatsIcon-stat-count">1.31%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:8.80649%;">
+												<div class="ProgressBar-meter" style="width:1.31379%;">
 													
 													
 												</div>
@@ -1526,7 +1534,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/comyel?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/evegro?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1549,8 +1557,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/eursta/US-VT-015" data-species-code="eursta">
-															European Starling <em class="sci">Sturnus vulgaris</em>
+														<a href="/species/baleag/US-VT-023" data-species-code="baleag">
+															Bald Eagle <em class="sci">Haliaeetus leucocephalus</em>
 														</a>
 													
 													
@@ -1560,21 +1568,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="8.63268% frequency">
+									<div class="ResultsStats-stats" title="0.75796% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
+															<span class="StatsIcon-stat-count">0.7580%</span>
 														
-															<span class="StatsIcon-stat-count">8.63%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:8.63268%;">
+												<div class="ProgressBar-meter" style="width:0.75796%;">
 													
 													
 												</div>
@@ -1586,7 +1594,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/eursta?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/baleag?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1609,8 +1617,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/dowwoo/US-VT-015" data-species-code="dowwoo">
-															Downy Woodpecker <em class="sci">Dryobates pubescens</em>
+														<a href="/species/nswowl/US-VT-023" data-species-code="nswowl">
+															Northern Saw-whet Owl <em class="sci">Aegolius acadicus</em>
 														</a>
 													
 													
@@ -1620,21 +1628,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="8.51680% frequency">
+									<div class="ResultsStats-stats" title="0.65690% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
+															<span class="StatsIcon-stat-count">0.6569%</span>
 														
-															<span class="StatsIcon-stat-count">8.52%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:8.5168%;">
+												<div class="ProgressBar-meter" style="width:0.6569%;">
 													
 													
 												</div>
@@ -1646,7 +1654,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/dowwoo?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/nswowl?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1669,8 +1677,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/moudov/US-VT-015" data-species-code="moudov">
-															Mourning Dove <em class="sci">Zenaida macroura</em>
+														<a href="/species/snobun/US-VT-023" data-species-code="snobun">
+															Snow Bunting <em class="sci">Plectrophenax nivalis</em>
 														</a>
 													
 													
@@ -1680,21 +1688,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="7.70568% frequency">
+									<div class="ResultsStats-stats" title="0.45478% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
+															<span class="StatsIcon-stat-count">0.4548%</span>
 														
-															<span class="StatsIcon-stat-count">7.71%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:7.70568%;">
+												<div class="ProgressBar-meter" style="width:0.45478%;">
 													
 													
 												</div>
@@ -1706,7 +1714,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/moudov?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/snobun?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1729,8 +1737,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/cedwax/US-VT-015" data-species-code="cedwax">
-															Cedar Waxwing <em class="sci">Bombycilla cedrorum</em>
+														<a href="/species/horlar/US-VT-023" data-species-code="horlar">
+															Horned Lark <em class="sci">Eremophila alpestris</em>
 														</a>
 													
 													
@@ -1740,21 +1748,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="6.66280% frequency">
+									<div class="ResultsStats-stats" title="0.35371% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
+															<span class="StatsIcon-stat-count">0.3537%</span>
 														
-															<span class="StatsIcon-stat-count">6.66%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:6.6628%;">
+												<div class="ProgressBar-meter" style="width:0.35371%;">
 													
 													
 												</div>
@@ -1766,7 +1774,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/cedwax?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/horlar?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1789,8 +1797,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/savspa/US-VT-015" data-species-code="savspa">
-															Savannah Sparrow <em class="sci">Passerculus sandwichensis</em>
+														<a href="/species/norgos/US-VT-023" data-species-code="norgos">
+															Northern Goshawk <em class="sci">Accipiter gentilis</em>
 														</a>
 													
 													
@@ -1800,21 +1808,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="5.56199% frequency">
+									<div class="ResultsStats-stats" title="0.30318% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
+															<span class="StatsIcon-stat-count">0.3032%</span>
 														
-															<span class="StatsIcon-stat-count">5.56%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:5.56199%;">
+												<div class="ProgressBar-meter" style="width:0.30318%;">
 													
 													
 												</div>
@@ -1826,7 +1834,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/savspa?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/norgos?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1849,8 +1857,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/reevir1/US-VT-015" data-species-code="reevir1">
-															Red-eyed Vireo <em class="sci">Vireo olivaceus</em>
+														<a href="/species/belkin1/US-VT-023" data-species-code="belkin1">
+															Belted Kingfisher <em class="sci">Megaceryle alcyon</em>
 														</a>
 													
 													
@@ -1860,21 +1868,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="5.27231% frequency">
+									<div class="ResultsStats-stats" title="0.30318% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
+															<span class="StatsIcon-stat-count">0.3032%</span>
 														
-															<span class="StatsIcon-stat-count">5.27%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:5.27231%;">
+												<div class="ProgressBar-meter" style="width:0.30318%;">
 													
 													
 												</div>
@@ -1886,7 +1894,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/reevir1?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/belkin1?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1909,8 +1917,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/rocpig/US-VT-015" data-species-code="rocpig">
-															Rock Pigeon <em class="sci">Columba livia</em>
+														<a href="/species/whwcro/US-VT-023" data-species-code="whwcro">
+															White-winged Crossbill <em class="sci">Loxia leucoptera</em>
 														</a>
 													
 													
@@ -1920,21 +1928,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="4.92468% frequency">
+									<div class="ResultsStats-stats" title="0.15159% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
+															<span class="StatsIcon-stat-count">0.1516%</span>
 														
-															<span class="StatsIcon-stat-count">4.92%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:4.92468%;">
+												<div class="ProgressBar-meter" style="width:0.15159%;">
 													
 													
 												</div>
@@ -1946,7 +1954,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/rocpig?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/whwcro?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -1969,8 +1977,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/turvul/US-VT-015" data-species-code="turvul">
-															Turkey Vulture <em class="sci">Cathartes aura</em>
+														<a href="/species/grhowl/US-VT-023" data-species-code="grhowl">
+															Great Horned Owl <em class="sci">Bubo virginianus</em>
 														</a>
 													
 													
@@ -1980,21 +1988,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="4.22943% frequency">
+									<div class="ResultsStats-stats" title="0.10106% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
+															<span class="StatsIcon-stat-count">0.1011%</span>
 														
-															<span class="StatsIcon-stat-count">4.23%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:4.22943%;">
+												<div class="ProgressBar-meter" style="width:0.10106%;">
 													
 													
 												</div>
@@ -2006,7 +2014,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/turvul?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/grhowl?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -2029,8 +2037,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/amekes/US-VT-015" data-species-code="amekes">
-															American Kestrel <em class="sci">Falco sparverius</em>
+														<a href="/species/redcro/US-VT-023" data-species-code="redcro">
+															Red Crossbill <em class="sci">Loxia curvirostra</em>
 														</a>
 													
 													
@@ -2040,21 +2048,21 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="2.72306% frequency">
+									<div class="ResultsStats-stats" title="0.10106% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
+															<span class="StatsIcon-stat-count">0.1011%</span>
 														
-															<span class="StatsIcon-stat-count">2.72%</span>
 														
 													
 												</span>
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:2.72306%;">
+												<div class="ProgressBar-meter" style="width:0.10106%;">
 													
 													
 												</div>
@@ -2066,7 +2074,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/amekes?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/redcro?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -2089,8 +2097,8 @@
 											<h5 class="SpecimenHeader-joined u-inline-xs">
 												
 													
-														<a href="/species/killde/US-VT-015" data-species-code="killde">
-															Killdeer <em class="sci">Charadrius vociferus</em>
+														<a href="/species/norhar2/US-VT-023" data-species-code="norhar2">
+															Northern Harrier <em class="sci">Circus hudsonius</em>
 														</a>
 													
 													
@@ -2100,13 +2108,13 @@
 									</div>
 
 									
-									<div class="ResultsStats-stats" title="0.69525% frequency">
+									<div class="ResultsStats-stats" title="0.05053% frequency">
 										<div class="ResultsStats-stats-stat">
 											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
 												<span class="StatsIcon-stat">
 													
 														
-															<span class="StatsIcon-stat-count">0.6952%</span>
+															<span class="StatsIcon-stat-count">0.0505%</span>
 														
 														
 													
@@ -2114,7 +2122,7 @@
 												
 											</div>
 											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.69525%;">
+												<div class="ProgressBar-meter" style="width:0.05053%;">
 													
 													
 												</div>
@@ -2126,67 +2134,7 @@
 									
 									<div class="ResultsStats-action">
 										
-										<a href="/map/killde?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
-											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
-											<span>Map</span>
-										</a>
-									</div>
-									
-								</div>
-
-							
-								
-								
-
-								<div class="ResultsStats ResultsStats--action ResultsStats--toEdge">
-
-									
-									<div class="ResultsStats-index">21.</div>
-
-									
-									<div class="ResultsStats-title">
-										<div class="SpecimenHeader">
-											<h5 class="SpecimenHeader-joined u-inline-xs">
-												
-													
-														<a href="/species/leafly/US-VT-015" data-species-code="leafly">
-															Least Flycatcher <em class="sci">Empidonax minimus</em>
-														</a>
-													
-													
-													
-											</h5>
-										</div>
-									</div>
-
-									
-									<div class="ResultsStats-stats" title="0.34762% frequency">
-										<div class="ResultsStats-stats-stat">
-											<div class="StatsIcon StatsIcon--inline StatsIcon--sm StatsIcon--muted">
-												<span class="StatsIcon-stat">
-													
-														
-															<span class="StatsIcon-stat-count">0.3476%</span>
-														
-														
-													
-												</span>
-												
-											</div>
-											<div class="ProgressBar ProgressBar--secondary ProgressBar--sm  u-margin-none" role="progressbar" tabindex="0">
-												<div class="ProgressBar-meter" style="width:0.34762%;">
-													
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="ResultsStats-action">
-										
-										<a href="/map/leafly?gp=true&yr=all&bmo=9&emo=10&amp;env.minX=-72.928&amp;env.minY=44.398&amp;env.maxX=-72.368&amp;env.maxY=44.802" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
+										<a href="/map/norhar2?gp=true&yr=all&bmo=3&emo=3&amp;env.minX=-72.953&amp;env.minY=44.013&amp;env.maxX=-72.217&amp;env.maxY=44.506" class="Button Button--small Button--icon Button--transparent u-margin-none u-inset-xs" style="display:inline-flex;align-items:center;">
 											<svg class="Icon Icon--map u-inline-xs" style="width:16px; height:16px;" role="img"><use xlink:href="#Icon--map"></use></svg>
 											<span>Map</span>
 										</a>
@@ -2286,13 +2234,13 @@
 				
 				
 					<div class="GridFlex-cell u-ms-size1of2 u-md-size1of4">
-						<h5 class="Heading"><a href="https://help.ebird.org/?t=">Help</a></h5>
+						<h5 class="Heading"><a href="https://support.ebird.org">Help</a></h5>
 						<ul class="UnorderedList UnorderedList--flat">
-							<li class="TextSmall u-text-3"><a href="https://help.ebird.org/customer/portal/articles/1972661?t=">Getting started with eBird</a></li>
-							<li class="TextSmall u-text-3"><a href="https://help.ebird.org/customer/portal/topics/454401?t=">Frequently asked questions</a></li>
+							<li class="TextSmall u-text-3"><a href="https://support.ebird.org/en/support/solutions/articles/48000957911">Getting started with eBird</a></li>
+							<li class="TextSmall u-text-3"><a href="https://support.ebird.org/en/support/solutions/articles/48000948757-ebird-faqs">Frequently asked questions</a></li>
 							<li class="TextSmall u-text-3"><a href="http://www.birds.cornell.edu/Page.aspx?pid=1635">Privacy Policy</a></li>
 							<li class="TextSmall u-text-3"><a href="http://www.birds.cornell.edu/Page.aspx?pid=1636">Terms of Use</a></li>
-							<li class="TextSmall u-text-3"><a href="https://help.ebird.org/customer/portal/emails/new?t=">Contact</a></li>
+							<li class="TextSmall u-text-3"><a href="https://support.ebird.org/en/support/tickets/new"">Contact</a></li>
 						</ul>
 					</div>
 				
@@ -2422,7 +2370,7 @@
 				
 				<div class="GridFlex-cell u-size1of1 u-text-2" style="color:#333; line-height:1;">
 					<span>
-						atc-p2
+						atc-p1
 
 					</span>
 				</div>
@@ -2436,7 +2384,7 @@
 </div> <!-- .page -->
 
 	<!-- Includes jQuery, needed by the species script -->
-	<script src="/content/eBirdCommon/lib/js/explore.ui.min.js?v=29" charset="utf-8"></script> 
+	<script src="/content/eBirdCommon/lib/js/explore.ui.min.js?v=37" charset="utf-8"></script> 
 
 	<!-- Web view (default) -->
 	
@@ -2445,12 +2393,12 @@
 
 		<script type="text/javascript">
 			var regionSelected = true,
-				customRangeSelected = 'true',
+				customRangeSelected = 'false',
 				rtype2 = 'subnational2',
-				r2='US-VT-015',
-				t2='life',
-				bmo='9',
-				emo='10',
+				r2='US-VT-023',
+				t2='year',
+				bmo='3',
+				emo='3',
 				busyImgSrc = "/content/eBirdCommon/images/busy.gif",
 				blankImgSrc = "/content/eBirdCommon/images/sp.gif",
 				baseUrl = '/',
@@ -2462,8 +2410,8 @@
 
 		<!-- page-specific public js -->
 		<script>
-			var regionForSpeciesPage = 'US-VT-015';
-			var listName = 'Lamoille County, Vermont, US - Target Species for Lamoille County - Life List';
+			var regionForSpeciesPage = 'US-VT-023';
+			var listName = 'Washington County, Vermont, US - Target Species for Washington County - Year List';
 			
 			ebird.configureLinks(regionForSpeciesPage, listName);
 

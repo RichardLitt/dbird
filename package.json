@@ -19,7 +19,7 @@
     "colors": "^1.4.0",
     "css-loader": "^3.4.2",
     "csv": "^5.3.2",
-    "d3": "^5.15.0",
+    "d3": "^7.6.1",
     "d3-geo": "^1.11.9",
     "fs": "0.0.1-security",
     "geojson-geometries-lookup": "^0.3.1",

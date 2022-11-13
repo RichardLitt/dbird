@@ -36,6 +36,6 @@
   },
   "devDependencies": {
     "csv-loader": "^3.0.2",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   }
 }
